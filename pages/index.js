@@ -11,12 +11,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Image src="/Millinote.png" alt="Millinote Logo" width={1024} />
       <main className={styles.main}>
         <h1 className={styles.title}>
           Minecraft Millinote
         </h1>
-
-      <Image src="/Millinote.png" alt="Millinote Logo" />
       </main>
 
       <footer className={styles.footer}>
