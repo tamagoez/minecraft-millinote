@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { LinkBox, LinkOverlay, Heading, Text, Button } from '@chakra-ui/react'
+import { LinkBox, LinkOverlay, Heading, Text, Button, Box } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 
 export default function Home() {
@@ -27,9 +27,11 @@ export default function Home() {
             <Text mb='3'>
               Java Edition is playable for PC users.
             </Text>
-            <Button href="/java" rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
-              Let&apos;s go!
-            </Button>
+            <Box as='a' color='teal.400' href="/java">
+                <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
+                Let&apos;s go!
+              </Button>
+            </Box>
           </LinkBox>
         </div>
         <div className={styles.grid}>
@@ -42,9 +44,11 @@ export default function Home() {
             <Text mb='3'>
               Bedrock Edition is playable for Switch, PlayStation, Mobile, PC users.
             </Text>
-            <Button href="/be" rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
-              Let&apos;s go!
-            </Button>
+              <Box as='a' color='teal.400' href="/be">
+                <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
+                Let&apos;s go!
+              </Button>
+            </Box>
           </LinkBox>
         </div>
       </main>
