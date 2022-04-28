@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { LinkBox, LinkOverlay, Heading, Text, Button, Box } from '@chakra-ui/react'
+import { LinkBox, LinkOverlay, Heading, Text, Button, Box, Divider } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 
 export default function Home() {
@@ -14,9 +14,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <Heading>
           Minecraft Millinote
-        </h1>
+        </Heading>
+        <Divider />
         <div className={styles.grid}>
           <LinkBox as='article' maxW='sm' p='5' borderWidth='1px' rounded='md'>
             <Heading size='md' my='2'>
@@ -26,6 +27,7 @@ export default function Home() {
             </Heading>
             <Text mb='3'>
               Java Edition is playable for PC users.
+              There are more useful commands then BE.
             </Text>
             <Box as='a' color='teal.400' href="/java">
                 <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
