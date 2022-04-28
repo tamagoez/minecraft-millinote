@@ -16,7 +16,7 @@ export default function Home() {
           Minecraft Millinote
         </h1>
 
-      <Image src="/Millinote" alt="Millinote Logo" />
+      <Image src="/Millinote.png" alt="Millinote Logo" />
       </main>
 
       <footer className={styles.footer}>
