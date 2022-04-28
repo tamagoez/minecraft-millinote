@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { LinkBox, LinkOverlay } from '@chakra-ui/react'
+import { LinkBox, LinkOverlay, Heading, Text, Button } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
               </LinkOverlay>
             </Heading>
             <Text mb='3'>
-              Bedrock Edition is playable for Switch,PlayStation,Mobile,PC users.
+              Bedrock Edition is playable for Switch, PlayStation, Mobile, PC users.
             </Text>
             <Button href="/be" rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
               Let's go!
