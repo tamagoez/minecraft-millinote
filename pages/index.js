@@ -28,7 +28,7 @@ export default function Home() {
               Java Edition is playable for PC users.
             </Text>
             <Button href="/java" rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
-              Let's go!
+              Let&apos;s go!
             </Button>
           </LinkBox>
         </div>
@@ -43,7 +43,7 @@ export default function Home() {
               Bedrock Edition is playable for Switch, PlayStation, Mobile, PC users.
             </Text>
             <Button href="/be" rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
-              Let's go!
+              Let&apos;s go!
             </Button>
           </LinkBox>
         </div>
