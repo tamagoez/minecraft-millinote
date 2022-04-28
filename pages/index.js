@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { LinkBox, LinkOverlay } from '@chakra-ui/react'
+import { ArrowForwardIcon } from '@chakra-ui/icons'
 
 export default function Home() {
   return (
@@ -11,11 +13,40 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Image src="/Millinote.png" alt="Millinote Logo" sizes="50vw" layout="responsive" />
       <main className={styles.main}>
         <h1 className={styles.title}>
           Minecraft Millinote
         </h1>
+        <div className={styles.grid}>
+          <LinkBox as='article' maxW='sm' p='5' borderWidth='1px' rounded='md'>
+            <Heading size='md' my='2'>
+              <LinkOverlay href='/java'>
+                Java Edition
+              </LinkOverlay>
+            </Heading>
+            <Text mb='3'>
+              Java Edition is playable for PC users.
+            </Text>
+            <Button href="/java" rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
+              Let's go!
+            </Button>
+          </LinkBox>
+        </div>
+        <div className={styles.grid}>
+          <LinkBox as='article' maxW='sm' p='5' borderWidth='1px' rounded='md'>
+            <Heading size='md' my='2'>
+              <LinkOverlay href='/be'>
+                Bedrock Edition
+              </LinkOverlay>
+            </Heading>
+            <Text mb='3'>
+              Bedrock Edition is playable for Switch,PlayStation,Mobile,PC users.
+            </Text>
+            <Button href="/be" rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
+              Let's go!
+            </Button>
+          </LinkBox>
+        </div>
       </main>
 
       <footer className={styles.footer}>
