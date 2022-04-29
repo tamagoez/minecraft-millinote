@@ -24,6 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      - name: Status
+        run: |
+          ls -XlR
 
       - name: Delete all mdx files
         run: |
