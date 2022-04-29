@@ -34,7 +34,7 @@ jobs:
         run: |
           cd
           mkdir arrange
-          cp ./doccument ./arrange
+          cp ./documents ./arrange
           
       - name: Copy all mdx files
         run: |
