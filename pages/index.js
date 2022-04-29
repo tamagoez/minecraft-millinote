@@ -60,7 +60,7 @@ export default function Home() {
         <div className="divider py-4">Contents</div>
         <div className="flex flex-wrap justify-center gap-4">
           <div>
-            <Link href="/Adventure" passHref>
+            <Link href="/en/Adventure" passHref>
               <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img
@@ -83,7 +83,7 @@ export default function Home() {
             </Link>
           </div>
           <div>
-            <Link href="/Create" passHref>
+            <Link href="/en/Create" passHref>
               <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img
@@ -106,7 +106,7 @@ export default function Home() {
             </Link>
           </div>
           <div>
-            <Link href="/Commands" passHref>
+            <Link href="/en/Commands" passHref>
               <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img
@@ -129,7 +129,7 @@ export default function Home() {
             </Link>
           </div>
           <div>
-            <Link href="/Server" passHref>
+            <Link href="/en/Server" passHref>
               <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img

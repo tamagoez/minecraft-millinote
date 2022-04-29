@@ -1,0 +1,6 @@
+[
+  { "tag": "execute", "path": "/ja/Commands/execute", "lang": "ja" },
+  { "tag": "execute", "path": "/en/Commands/execute", "lang": "en" },
+  { "tag": "tag", "path": "/ja/Commands/tag", "lang": "ja" },
+  { "tag": "タグコマンド", "path": "/ja/Commands/tag", "lang": "ja" }
+]
