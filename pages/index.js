@@ -18,7 +18,8 @@ export default function Home() {
         </h1>
         <div className="divider" />
         <div className="grid">
-        <Link href="/java" className="card card-compact w-96 bg-base-100 shadow-xl">
+        <Link href="/java">
+          <div className="card card-compact w-96 bg-base-100 shadow-xl">
           <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
           <div className="card-body">
             <h2 className="card-title">Java Edition</h2>
@@ -27,9 +28,11 @@ export default function Home() {
               <button className="btn btn-primary">Let&apos;s go!</button>
             </div>
           </div>
+          </div>
         </Link>
         
-        <Link href="/be" className="card card-compact w-96 bg-base-100 shadow-xl">
+        <Link href="/be">
+          <div className="card card-compact w-96 bg-base-100 shadow-xl">
           <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
           <div className="card-body">
             <h2 className="card-title">Bedrock Edition</h2>
@@ -37,6 +40,7 @@ export default function Home() {
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Let&apos;s go!</button>
             </div>
+          </div>
           </div>
         </Link>
         </div>
