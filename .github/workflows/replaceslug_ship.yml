@@ -28,19 +28,15 @@ jobs:
       - name: Status
         run: |
           ls -XlR
-
       - name: Delete all mdx files
         run: |
           rm -fv ./pages/*.mdx
-          
       - name: Replace slug
         run: |
           mkdir arrange
           cp -fvr ./documents/ ./arrange/
-          
       - name: Copy all mdx files
         run: |
           cp -fpvr ./arrange ./pages
-
       - name: Delete
         run: rm -rf ./arrange
