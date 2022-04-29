@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </div>
         <div ref={contentRef} style={{ height: 0 }} />
-        <div className="divider py-4">内容</div>
+        <div className="divider py-4">コンテンツ</div>
         <div className="flex flex-wrap justify-center gap-4">
           <div>
             <Link href="/ja/Adventure" passHref>
