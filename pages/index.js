@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         </h1>
         <div className="divider" />
         <div className="grid">
-        <a className="card card-compact w-96 bg-base-100 shadow-xl" href="/java">
+        <Link href="/java" className="card card-compact w-96 bg-base-100 shadow-xl">
           <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
           <div className="card-body">
             <h2 className="card-title">Java Edition</h2>
@@ -26,8 +27,9 @@ export default function Home() {
               <button className="btn btn-primary">Let&apos;s go!</button>
             </div>
           </div>
-        </a>
-        <a className="card card-compact w-96 bg-base-100 shadow-xl" href="/be">
+        </Link>
+        
+        <Link href="/be" className="card card-compact w-96 bg-base-100 shadow-xl">
           <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
           <div className="card-body">
             <h2 className="card-title">Bedrock Edition</h2>
@@ -36,7 +38,7 @@ export default function Home() {
               <button className="btn btn-primary">Let&apos;s go!</button>
             </div>
           </div>
-        </a>
+        </Link>
         </div>
       </>
 
