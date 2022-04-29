@@ -1,11 +1,10 @@
-import { Heading, Divider } from '@chakra-ui/react'
 export default function Index() {
     return (
         <>
-            <Heading as='h2' size='3xl' isTruncated>
+            <h2>
                 Java Edition
-            </Heading>
-            <Divider />
+            </h2>
+            <div className="divider" />
         </>
     );
 }
