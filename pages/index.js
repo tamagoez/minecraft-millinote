@@ -26,7 +26,7 @@ export default function Home() {
                 <br />
                 Writing with beginner person
               </p>
-              <label for="language" class="btn modal-button">
+              <label htmlFor="language" class="btn modal-button">
                 Select language
               </label>
               <div className="py-8 w-full">
@@ -94,7 +94,7 @@ export default function Home() {
                 <div className="card-body">
                   <h2 className="card-title">Create</h2>
                   <p>
-                    Let's build/enchant/make redstone circuit
+                    Let&apos;s build/enchant/make redstone circuit
                     <br />
                     Only few pages here...
                   </p>
@@ -169,8 +169,8 @@ export default function Home() {
       </footer>
 
       <input type="checkbox" id="language" className="modal-toggle" />
-      <label for="language" className="modal cursor-pointer">
-        <label className="modal-box relative" for="">
+      <label htmlFor="language" className="modal cursor-pointer">
+        <label className="modal-box relative" htmlFor="">
           <ul className="menu bg-base-100 w-56 p-2 rounded-box w-full">
             <li>
               <span onClick={() => router.push("/")}>🇺🇸 English</span>
