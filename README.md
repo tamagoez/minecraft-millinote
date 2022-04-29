@@ -2,3 +2,5 @@
 
 初心者と一緒に書いていく詳しいノート。  
 Note which making together with begginer player.
+
+珍しいことに、このサイトは **`tailwindcss`**(+daisyUI)と **`chakra-ui`** に浮気しています。
