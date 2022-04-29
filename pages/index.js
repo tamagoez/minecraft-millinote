@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "/styles/Home.module.css";
 import Link from "next/link";
 import { useRef } from "react";
+import { router } from "next/router";
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 export default function Home() {
   const contentRef = useRef(null);
@@ -15,30 +17,50 @@ export default function Home() {
       </Head>
 
       <>
-        <div className="hero min-h-screen bg-gradient-to-r from-green-200 to-gray-100">
+        <div className="hero min-h-screen bg-gradient-to-r from-orange-900/20 to-green-100">
           <div className="hero-content text-center">
             <div className="max-w-md">
               <h1 className="text-5xl font-bold">Minecraft WikiNote</h1>
-              <p className="py-6">Minecraft Wiki</p>
-              <button
-                className="btn btn-wide"
-                onClick={() =>
-                  contentRef.current.scrollIntoView({
-                    block: "start",
-                    behavior: "smooth"
-                  })
-                }
-              >
-                Let&apos;s explore
-              </button>
+              <p className="py-3">
+                Minecraft Wiki which easy-to-understand than others
+                <br />
+                Writing with beginner person
+              </p>
+              <label for="language" class="btn modal-button">
+                Select language
+              </label>
+              <div className="py-8 w-full">
+                <button
+                  className="btn btn-block btn-outline"
+                  onClick={() =>
+                    contentRef.current.scrollIntoView({
+                      block: "start",
+                      behavior: "smooth"
+                    })
+                  }
+                >
+                  Let&apos;s explore
+                </button>
+                <p
+                  onClick={() =>
+                    contentRef.current.scrollIntoView({
+                      block: "start",
+                      behavior: "smooth"
+                    })
+                  }
+                  className="text-5xl text-gray-900 hover:text-gray-600 pt-6 flex justify-center"
+                >
+                  <BsChevronDoubleDown />
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <div ref={contentRef} style={{ height: 0 }} />
-        <div className="divider">Contents</div>
+        <div className="divider py-4">Contents</div>
         <div className="flex flex-wrap justify-center gap-4">
           <div>
-            <Link href="/Adventure">
+            <Link href="/Adventure" passHref>
               <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img
@@ -48,7 +70,11 @@ export default function Home() {
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">Adventure</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>
+                    Adventure Minecraft world!
+                    <br />
+                    Tips & HowTo
+                  </p>
                   <div className="card-actions justify-end">
                     <button className="btn btn-primary">Let&apos;s go!</button>
                   </div>
@@ -57,7 +83,7 @@ export default function Home() {
             </Link>
           </div>
           <div>
-            <Link href="/Create">
+            <Link href="/Create" passHref>
               <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img
@@ -67,7 +93,11 @@ export default function Home() {
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">Create</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>
+                    Let's build/enchant/make redstone circuit
+                    <br />
+                    Only few pages here...
+                  </p>
                   <div className="card-actions justify-end">
                     <button className="btn btn-primary">Let&apos;s go!</button>
                   </div>
@@ -76,7 +106,7 @@ export default function Home() {
             </Link>
           </div>
           <div>
-            <Link href="/Commands">
+            <Link href="/Commands" passHref>
               <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img
@@ -86,7 +116,11 @@ export default function Home() {
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">Command</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>
+                    Make something cool
+                    <br />
+                    Easy-to-understand refference
+                  </p>
                   <div className="card-actions justify-end">
                     <button className="btn btn-primary">Let&apos;s go!</button>
                   </div>
@@ -95,7 +129,7 @@ export default function Home() {
             </Link>
           </div>
           <div>
-            <Link href="/Server">
+            <Link href="/Server" passHref>
               <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img
@@ -105,7 +139,11 @@ export default function Home() {
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">Server</h2>
-                  <p>WikiNote about server.</p>
+                  <p>
+                    How to manage/run server?
+                    <br />
+                    Server maintainer wrote!
+                  </p>
                   <div className="card-actions justify-end">
                     <button className="btn btn-primary">Let&apos;s go!</button>
                   </div>
@@ -129,6 +167,20 @@ export default function Home() {
           </a>
         </span>
       </footer>
+
+      <input type="checkbox" id="language" className="modal-toggle" />
+      <label for="language" className="modal cursor-pointer">
+        <label className="modal-box relative" for="">
+          <ul className="menu bg-base-100 w-56 p-2 rounded-box w-full">
+            <li>
+              <span onClick={() => router.push("/")}>🇺🇸 English</span>
+            </li>
+            <li>
+              <span onClick={() => router.push("/ja")}>🇯🇵 日本語</span>
+            </li>
+          </ul>
+        </label>
+      </label>
     </div>
   );
 }

@@ -1,9 +1,13 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+// import { router } from "next/router";
+// import twemoji from "twemoji";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Component {...pageProps} />
-  )
+    <>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
