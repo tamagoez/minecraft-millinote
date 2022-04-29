@@ -33,10 +33,10 @@ jobs:
       - name: Replace slug
         run: |
           mkdir arrange
-          cp -fvr ./documents/ ./arrange/
+          cp -fvr ./documents/* ./arrange/
       - name: Copy all mdx files
         run: |
-          cp -fpvr ./arrange ./pages
+          cp -fpvr ./arrange/* ./pages/
       - name: Delete
         run: rm -rf ./arrange
       - name: Push
@@ -45,5 +45,5 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull
           git add -A
-          git commit -m "Push output"
+          git commit -m "Push replaced pages"
           git push
