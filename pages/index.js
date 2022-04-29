@@ -26,7 +26,7 @@ export default function Home() {
                 <br />
                 Writing with beginner person
               </p>
-              <label htmlFor="language" class="btn modal-button">
+              <label htmlFor="language" className="btn modal-button">
                 Select language
               </label>
               <div className="py-8 w-full">
