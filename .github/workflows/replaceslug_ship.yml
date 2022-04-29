@@ -27,18 +27,18 @@ jobs:
 
       - name: Delete all mdx files
         run: |
-          cd pages/
+          cd ./pages
           rm -fv *.mdx
           
       - name: Replace slug
         run: |
           cd
           mkdir arrange
-          cp /doccuments /arrange
+          cp ./doccument ./arrange
           
       - name: Copy all mdx files
         run: |
-          cp -fpv /arrange/ /pages/
+          cp -fpv ./arrange ./pages
 
       - name: Delete
-        run: rm -rf /arrange
+        run: rm -rf ./arrange
