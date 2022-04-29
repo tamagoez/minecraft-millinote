@@ -36,11 +36,11 @@ jobs:
       - name: Replace slug
         run: |
           mkdir arrange
-          cp -r ./documents/ ./arrange/
+          cp -fvr ./documents/ ./arrange/
           
       - name: Copy all mdx files
         run: |
-          cp -fpv ./arrange ./pages
+          cp -fpvr ./arrange ./pages
 
       - name: Delete
         run: rm -rf ./arrange
