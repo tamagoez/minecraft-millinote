@@ -29,6 +29,7 @@
     "daisyui": "^2.14.2",
     "postcss": "^8.4.12",
     "autoprefixer": "^10.4.5",
-    "next-sitemap": "^2.5.20"
+    "next-sitemap": "^2.5.20",
+    "pace-js": "^1.2.4"
   }
 }
