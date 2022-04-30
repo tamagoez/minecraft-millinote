@@ -40,7 +40,7 @@ jobs:
           cp -fpvr ./arrange/* ./pages/
       - name: Delete
         run: rm -rf ./arrange
-      - name: hash
+      - name: Hash Check
         run: |
           CURRENT_CACHE=`cat ./hash.txt`
           rm -f ./hash.txt
@@ -52,7 +52,7 @@ jobs:
           fi
       - name: Push
         run: |
-          PUSH_CHECK = `cat pushcheck.txt`
+          PUSH_CHECK=`cat pushcheck.txt`
           rm -f pushcheck.txt
           if [ PUSH_CHECK = "true" ]; then
             git config --global user.name "github-actions[bot]"
@@ -61,4 +61,6 @@ jobs:
             git add -A
             git commit -m "Push replaced pages"
             git push
+          else
+            echo "Ignore push"
           fi
