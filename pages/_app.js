@@ -4,10 +4,6 @@ import "../styles/globals.css";
 import NavBar from '/components/NavBar';
 import { MDXProvider } from '@mdx-js/react'
 
-const HeadTitle = (props) => (
-  <Image alt={props.alt} layout="responsive" {...props} />
-)
-
 export function reportWebVitals(metric) {
   console.log(metric)
 }
