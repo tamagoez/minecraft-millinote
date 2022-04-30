@@ -56,10 +56,12 @@ jobs:
       needs: replace
       if: ${{ needs.replace.outputs.skip_ci != 'true' }}
       steps:
-        - run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull
-          git add -A
-          git commit -m "Push replaced pages"
-          git push
+        - uses: actions/checkout@v3
+        - name: Replace
+          - run: |
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git pull
+            git add -A
+            git commit -m "Push replaced pages"
+            git push
