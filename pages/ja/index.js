@@ -57,9 +57,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div ref={contentRef} style={{ height: 0 }} />
         <NavBar />
         <div className="min-h-[80vh]">
-          <div ref={contentRef} style={{ height: 0 }} />
           <div className="divider py-4">コンテンツ</div>
           <div className="flex flex-wrap justify-center gap-4">
             <div>
