@@ -4,15 +4,26 @@ import "../styles/globals.css";
 import NavBar from '/components/NavBar';
 import { MDXProvider } from '@mdx-js/react'
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <NavBar />
-      <MDXProvider>
-        <Component {...pageProps} />
-      </MDXProvider>
-    </>
-  );
+const HeadTitle = (props) => (
+  <Image alt={props.alt} layout="responsive" {...props} />
+)
+
+export function reportWebVitals(metric) {
+  console.log(metric)
 }
 
-export default MyApp;
+// const components = {}
+
+export default function Page(props) {
+  return (
+    <>
+    <div className="sticky top-0">
+      <NavBar />
+    </div>
+    <div>
+    <MDXProvider>
+      <main {...props} />
+    </MDXProvider>
+    </div>
+  )
+}
