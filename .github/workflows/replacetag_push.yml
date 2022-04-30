@@ -49,6 +49,7 @@ jobs:
             echo "true" > pushcheck.txt
           else
             echo "false" > pushcheck.txt
+            echo "::set-output name=skip_ci::true"
           fi
       - name: Push
         run: |
