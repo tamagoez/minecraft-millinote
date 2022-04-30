@@ -13,7 +13,7 @@ export function reportWebVitals(metric) {
 export default function Page(props) {
   return (
     <>
-    <div className="sticky top-0">
+    <div className="sticky">
       <NavBar />
     </div>
     <div>
