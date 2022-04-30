@@ -25,5 +25,6 @@ export default function Page(props) {
       <main {...props} />
     </MDXProvider>
     </div>
+</>
   )
 }
