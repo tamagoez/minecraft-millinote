@@ -6,7 +6,7 @@ import { MDXProvider } from '@mdx-js/react'
 import { useEffect } from 'react'
 import { themeChange } from 'theme-change'
 
-import { HeadTitle, ContentP } from '/components/Convert'
+import { HeadTitle, ContentP, ContentH2, ContentCode } from '/components/Convert'
 
 export function reportWebVitals(metric) {
   console.log(metric);
@@ -23,6 +23,8 @@ export default function Page({ Component, pageProps }) {
   const components = {
     h1: HeadTitle,
     p: ContentP,
+    h2: ContentH2,
+    code: ContentCode,
   }
   
   const router = useRouter();
