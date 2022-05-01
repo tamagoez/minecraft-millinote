@@ -17,6 +17,16 @@ export function ContentH2({ children }) {
   )
 }
 
+export function ContentCode({ children }) {
+  return (
+    <>
+      <div className="rounded-lg bg-base-content">
+        <code className"p-2">{children}</code>
+      </div>
+    </>
+  )
+}
+
 export function ContentP({ children }) {
   return (
     <>
