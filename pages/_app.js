@@ -7,12 +7,23 @@ import { useEffect } from 'react'
 import { themeChange } from 'theme-change'
 
 import { HeadTitle, ContentP, ContentH2, ContentCode } from '/components/Convert'
+// https://zenn.dev/catnose99/articles/bb943c3dc99d89
+import Head from 'next/head'
 
 export function reportWebVitals(metric) {
   console.log(metric);
 }
 
-// const components = {}
+export function HeadContents() {
+  return (
+    <>
+      <Head>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet" />
+      </Head>
+    </>
+  )
+}
 
 export default function Page({ Component, pageProps }) {
   useEffect(() => {
@@ -34,6 +45,7 @@ export default function Page({ Component, pageProps }) {
   if (nowurl === "/" || nowurl === "/ja" || nowurl === "/en") {
     return (
       <>
+        <HeadContents />
         <div>
           <Component {...pageProps} />
         </div>
@@ -42,6 +54,7 @@ export default function Page({ Component, pageProps }) {
   } else {
     return (
       <>
+        <HeadContents />
         <div className="sticky top-0">
           <NavBar />
         </div>
