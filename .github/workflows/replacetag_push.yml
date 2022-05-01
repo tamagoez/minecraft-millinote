@@ -61,6 +61,6 @@ jobs:
   skipcheck:
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ needs.build.outputs.skip_ci != 'true' }}
+    if: ${{ needs.build.outputs.skip_ci == 'true' }}
     steps:
       - run: echo "Pushed"
