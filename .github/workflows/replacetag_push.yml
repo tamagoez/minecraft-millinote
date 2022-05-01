@@ -27,7 +27,6 @@ jobs:
       - name: Status
         run: |
           ls -XlR
-          sha1sum ./ |sed 's/\s\s*\/.*$//g' > hash.txt
       - name: Delete all mdx files
         run: |
           rm -fv ./pages/*.mdx
@@ -40,22 +39,10 @@ jobs:
           cp -fpvr ./arrange/* ./pages/
       - name: Delete
         run: rm -rf ./arrange
-      - name: Hash Check
-        run: |
-          CURRENT_CACHE=`cat ./hash.txt`
-          rm -f ./hash.txt
-          NOW_CACHE=`sha1sum ./ |sed 's/\s\s*\/.*$//g'`
-          if [ CURRENT_CACHE != NOW_CACHE ]; then
-            echo "true" > pushcheck.txt
-          else
-            echo "false" > pushcheck.txt
-            echo "::set-output name=skip_ci::true"
-          fi
       - name: Push
         continue-on-error: true
         run: |
-          PUSH_CHECK=`cat pushcheck.txt`
-          rm -f pushcheck.txt
+          PUSH_CHECK="true"
           if [ PUSH_CHECK = "true" ]; then
             git config --global user.name "github-actions[bot]"
             git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
