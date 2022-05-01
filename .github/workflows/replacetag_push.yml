@@ -52,6 +52,7 @@ jobs:
             echo "::set-output name=skip_ci::true"
           fi
       - name: Push
+        continue-on-error: true
         run: |
           PUSH_CHECK=`cat pushcheck.txt`
           rm -f pushcheck.txt
