@@ -7,7 +7,8 @@ Note which making together with begginer player.
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=tamagoez_minecraft-wikinote&metric=bugs)](https://sonarcloud.io/summary/new_code?id=tamagoez_minecraft-wikinote)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=tamagoez_minecraft-wikinote&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=tamagoez_minecraft-wikinote)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=tamagoez_minecraft-wikinote&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=tamagoez_minecraft-wikinote)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=tamagoez_minecraft-wikinote&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=tamagoez_minecraft-wikinote)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=tamagoez_minecraft-wikinote&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=tamagoez_minecraft-wikinote)  
+[![Replace Tag & Push](https://github.com/tamagoez/minecraft-wikinote/actions/workflows/replacetag_push.yml/badge.svg)](https://github.com/tamagoez/minecraft-wikinote/actions/workflows/replacetag_push.yml)
 
 Vercelが勝手に動いてしまうのが好きではないので、[`/files/vercel-ignored-build-step.sh`](https://github.com/tamagoez/minecraft-wikinote/blob/main/files/vercel-ignored-build-step.sh)を使って、コミットメッセージに**deploy** 又は **`*`** が含まれるときのみデプロイされます。  
 
