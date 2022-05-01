@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import { useRouter } from "next/router";
 // import twemoji from "twemoji";
 import NavBar from "/components/NavBar";
+import Footer from "/components/Footer";
 import { MDXProvider } from "@mdx-js/react";
 import { useEffect } from "react";
 import { themeChange } from "theme-change";
@@ -63,6 +64,7 @@ export default function Page({ Component, pageProps }) {
         <div>
           <Component {...pageProps} />
         </div>
+        <Footer />
       </>
     );
   } else {
@@ -80,6 +82,7 @@ export default function Page({ Component, pageProps }) {
             <EditThisPage from={nowurl} lang="ja" />
           </div>
         </div>
+        <Footer />
       </>
     );
   }
