@@ -76,7 +76,7 @@ export default function Page({ Component, pageProps }) {
         <div className="sticky top-0">
           <NavBar />
         </div>
-        <div className="px-3 py-1">
+        <div className="px-3 py-1 min-h-[80vh]">
           <MDXProvider components={components}>
             <Component {...pageProps} />
           </MDXProvider>
