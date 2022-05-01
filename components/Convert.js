@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export function HeadTitle({ children }) {
   return (
     <>
@@ -33,4 +35,12 @@ export function ContentP({ children }) {
       <p className="text-base-800">{children}</p>
     </>
    )
+}
+
+export function ContentLink({ href, children }) {
+  return (
+    <>
+      <Link href={href}><p className="underline decoration-1 hover:decoration-2">{children}</p></Link>
+    </>
+  )
 }
