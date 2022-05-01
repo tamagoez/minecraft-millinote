@@ -50,7 +50,7 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull
           git add -A
-          git commit -m "Push replaced pages"
+          git commit -m "[deploy] Push replaced pages"
           git push
           RETURN_CODE=$?
           if [ RETURN_CODE = 0 ]; then
