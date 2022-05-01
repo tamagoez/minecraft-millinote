@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     
     outputs:
-      skip_ci: ${{ steps.build.outputs.skip_ci }}
+      skip_ci: ${{ steps.push_deal.outputs.skip_ci }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -44,6 +44,7 @@ jobs:
         run: rm -rf ./arrange
       - name: Push
         continue-on-error: true
+        id: push_deal
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
