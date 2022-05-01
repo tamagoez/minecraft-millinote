@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
 
       <>
-        <div className="hero min-h-screen bg-gradient-to-r from-orange-900/20 to-green-100">
+        <div className="hero min-h-screen w-full bg-gradient-to-r from-orange-900/20 to-green-100">
           <div className="hero-content text-center">
             <div className="max-w-md">
               <h1 className="text-5xl font-bold">Minecraft WikiNote</h1>
