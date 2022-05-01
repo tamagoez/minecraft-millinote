@@ -7,3 +7,4 @@ Vercelが勝手に動いてしまうのが好きではないので、`/files/ver
 
 **`documents`フォルダー内を編集した場合は、`deploy`をコミットメッセージに含めないでください!**  
 GitHub Actionsが処理を行い、`deploy`を付けてpullするので不要です。
+`README.md`や一時的な保存の場合も含めないでください。
