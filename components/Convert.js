@@ -40,7 +40,7 @@ export function ContentP({ children }) {
 export function ContentLink({ href, children }) {
   return (
     <>
-      <Link href={href}><p className="underline decoration-1 hover:decoration-2">{children}</p></Link>
+      <Link href={href} passHref><p className="underline decoration-1 hover:decoration-2">{children}</p></Link>
     </>
   )
 }
