@@ -3,4 +3,4 @@
 初心者と一緒に書いていく詳しいノート。  
 Note which making together with begginer player.
 
-珍しいことに、このサイトは **`tailwindcss`**(+daisyUI)と **`chakra-ui`** に浮気しています。
+Vercelが勝手に動いてしまうのが好きではないので、`/files/vercel-ignored-build-step.sh`を使って、コミットメッセージに**deploy**が含まれるときのみデプロイされます。
