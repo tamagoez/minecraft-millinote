@@ -14,7 +14,7 @@ export function HeadTitle({ children }) {
 export function ContentH2({ children }) {
   return (
     <>
-      <div className="border-dashed border-b-4 bg-base-500 pt-5 pb-1">
+      <div className="border-dashed border-b-4 bg-base-500 pt-5 pb-1 sticky z-40">
         <h2 className="font-semibold text-lg text-base-800">{children}</h2>
       </div>
       <div className="pb-2" />
@@ -27,7 +27,7 @@ export function ContentCode({ children }) {
     <>
       <div className="pt-1" />
       <div className="rounded-lg bg-base-content pb-3 pt-3 shadow-md shadow-base-content/50 overflow-x-auto">
-        <code className="px-3 z-10 text-base-200 py-3 z-40">{children}</code>
+        <code className="px-3 z-10 text-base-200 py-3">{children}</code>
       </div>
     </>
   );
