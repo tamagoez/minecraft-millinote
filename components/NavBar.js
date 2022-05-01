@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function NavBar() {
   return (
-    <div className="sticky top-0 z-50">
+    <div className="sticky top-0 z-50 w-full">
       <div className="navbar bg-base-200/90">
         <div className="navbar-start">
           <div className="dropdown">
