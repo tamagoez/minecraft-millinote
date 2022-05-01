@@ -43,7 +43,7 @@ export default function Page({ Component, pageProps }) {
         <div className="sticky top-0">
           <NavBar />
         </div>
-        <div>
+        <div className="px-3 py-1">
           <MDXProvider components={components}>
             <Component {...pageProps} />
           </MDXProvider>
