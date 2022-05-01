@@ -1,8 +1,18 @@
 export function HeadTitle({ children }) {
   return (
     <>
-      <h1 className="font-medium text-xl text-base-900">{children}</h1>
+      <h1 className="font-bold text-xl text-base-900">{children}</h1>
       <div className="divider" />
+    </>
+  )
+}
+
+export function ContentH2({ children }) {
+  return (
+    <>
+      <div className="border-dashed border-y-4 bg-base-500">
+        <h2 className="font-semibold text-lg text-base-800">{children}</h2>
+      </div>
     </>
   )
 }
