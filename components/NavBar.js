@@ -36,7 +36,7 @@ export default function NavBar() {
         </div>
         <div className="navbar-center">
           <Link href="/">
-            <span className="btn btn-ghost normal-case text-base sm:text-xl">
+            <span className="btn btn-ghost normal-case text-base sm:text-sm">
               Minecraft WikiNote
             </span>
           </Link>
