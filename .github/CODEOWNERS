@@ -5,3 +5,4 @@
 /*.js @tamagoez
 /.github/ @tamagoez
 /components/ @tamagoez
+/files/*.sh @tamagoez
