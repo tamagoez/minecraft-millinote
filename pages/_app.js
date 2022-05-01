@@ -2,9 +2,11 @@ import "../styles/globals.css";
 import { useRouter } from "next/router";
 // import twemoji from "twemoji";
 import NavBar from "/components/NavBar";
-// import { MDXProvider } from '@mdx-js/react'
+import { MDXProvider } from '@mdx-js/react'
 import { useEffect } from 'react'
 import { themeChange } from 'theme-change'
+
+import { HeadTitle, ContentP } from '/components/Convert'
 
 export function reportWebVitals(metric) {
   console.log(metric);
@@ -17,9 +19,16 @@ export default function Page({ Component, pageProps }) {
     themeChange(false)
     // 👆 false parameter is required for react project
   }, [])
+  
+  const components = {
+    h1: HeadTitle,
+    p: ContentP,
+  }
+  
   const router = useRouter();
   const nowurl = router.pathname;
   console.log("[_app.js] Access link: " + nowurl);
+  
   if (nowurl === "/" || nowurl === "/ja" || nowurl === "/en") {
     return (
       <>
@@ -35,7 +44,9 @@ export default function Page({ Component, pageProps }) {
           <NavBar />
         </div>
         <div>
-          <Component {...pageProps} />
+          <MDXProvider components={components}>
+            <Component {...pageProps} />
+          </MDXProvider>
         </div>
       </>
     );
