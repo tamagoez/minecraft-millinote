@@ -3,4 +3,5 @@
 初心者と一緒に書いていく詳しいノート。  
 Note which making together with begginer player.
 
-Vercelが勝手に動いてしまうのが好きではないので、`/files/vercel-ignored-build-step.sh`を使って、コミットメッセージに**deploy**が含まれるときのみデプロイされます。
+Vercelが勝手に動いてしまうのが好きではないので、`/files/vercel-ignored-build-step.sh`を使って、コミットメッセージに**deploy**が含まれるときのみデプロイされます。  
+**`documents`フォルダー内を編集した場合は、`deploy`をコミットメッセージに含めないでください!**
