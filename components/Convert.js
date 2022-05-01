@@ -10,7 +10,7 @@ export function HeadTitle({ children }) {
 export function ContentH2({ children }) {
   return (
     <>
-      <div className="border-dashed border-y-4 bg-base-500 pt-6 pb-3">
+      <div className="border-dashed border-b-4 bg-base-500 pt-6 pb-3">
         <h2 className="font-semibold text-lg text-base-800">{children}</h2>
       </div>
     </>
