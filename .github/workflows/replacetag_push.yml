@@ -48,7 +48,8 @@ jobs:
           git add -A
           git commit -m "Push replaced pages"
           git push
-          if [ $? = 0 ]; then
+          RETURN_CODE=$?
+          if [ RETURN_CODE = 0 ]; then
             echo "::set-output name=skip_ci::false"
           else
             echo "::set-output name=skip_ci::true"
