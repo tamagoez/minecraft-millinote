@@ -41,6 +41,14 @@ export function ContentP({ children }) {
   );
 }
 
+export function ContentB({ children }) {
+  return (
+    <>
+      <p className="text-base-900 font-bold">{children}</p>
+    </>
+  )
+}
+
 export function ContentLink({ href, children }) {
   return (
     <>
