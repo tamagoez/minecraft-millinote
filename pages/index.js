@@ -61,7 +61,7 @@ export default function Home() {
         <NavBar />
         <div className="min-h-[80vh]">
           <div className="divider py-4">Contents</div>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4 px-3">
             <div>
               <Link href="/en/Adventure" passHref>
                 <div className="card card-compact w-96 bg-base-100 shadow-xl">
