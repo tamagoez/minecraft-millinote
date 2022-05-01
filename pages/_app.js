@@ -6,7 +6,7 @@ import { MDXProvider } from '@mdx-js/react'
 import { useEffect } from 'react'
 import { themeChange } from 'theme-change'
 
-import { HeadTitle, ContentP, ContentH2, ContentCode } from '/components/Convert'
+import { HeadTitle, ContentP, ContentH2, ContentCode, ContentLink } from '/components/Convert'
 // https://zenn.dev/catnose99/articles/bb943c3dc99d89
 import Head from 'next/head'
 
@@ -36,6 +36,7 @@ export default function Page({ Component, pageProps }) {
     p: ContentP,
     h2: ContentH2,
     code: ContentCode,
+    a: ContentLink,
   }
   
   const router = useRouter();
