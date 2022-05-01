@@ -6,7 +6,7 @@
 COMMIT_MESSAGE=$VERCEL_GIT_COMMIT_MESSAGE
 echo "Got Comment: $COMMIT_MESSAGE"
 
-if [[ "$COMMIT_MESSAGE" =~ "deploy" || "$COMMIT_MESSAGE" =~ "**" ]] ; then
+if [[ "$COMMIT_MESSAGE" =~ "deploy" || "$COMMIT_MESSAGE" =~ "*" ]] ; then
   # Proceed with the build
   echo "✅ - Build can proceed"
   exit 1;
