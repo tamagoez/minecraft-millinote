@@ -65,7 +65,7 @@ export default function NavBar() {
             <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
               <li>
                 <select data-choose-theme className="select select-bordered">
-                  <option value="">🌞 Default</option>
+                  <option value="light">🌞 Light</option>
                   <option value="dark">🌙 Dark</option>
                   <option value="corporate">Corporate</option>
                 </select>
