@@ -42,14 +42,20 @@ jobs:
       - name: Push
         continue-on-error: true
         run: |
-          PUSH_CHECK="true"
-          if [ PUSH_CHECK = "true" ]; then
-            git config --global user.name "github-actions[bot]"
-            git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git pull
-            git add -A
-            git commit -m "Push replaced pages"
-            git push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull
+          git add -A
+          git commit -m "Push replaced pages"
+          git push
+          if [ $? = 0 ]; then
+            echo "::set-output name=skip_ci::false"
           else
-            echo "Ignore push"
+            echo "::set-output name=skip_ci::true"
           fi
+  skipcheck:
+    runs-on: ubuntu-latest
+    needs: build
+    if: ${{ needs.build.outputs.skip_ci != 'true' }}
+    steps:
+      - run: echo "Pushed"
