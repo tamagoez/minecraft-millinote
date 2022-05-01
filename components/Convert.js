@@ -26,7 +26,7 @@ export function ContentCode({ children }) {
   return (
     <>
       <div className="pt-1" />
-      <div className="rounded-lg bg-base-content pb-3 pt-3 shadow-md shadow-base-content/50 overflow-x-auto">
+      <div className="rounded-md bg-base-content pb-3 pt-3 shadow-md shadow-base-content/50 overflow-x-auto">
         <code className="px-3 z-10 text-base-200 py-3">{children}</code>
       </div>
     </>
