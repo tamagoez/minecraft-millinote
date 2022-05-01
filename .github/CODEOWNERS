@@ -1,8 +1,10 @@
 /pages/index.js @tamagoez
 /pages/ja/index.js @tamagoez
+/pages/en/index.js @tamagoez
 /pages/_app.js @tamagoez
 /*.json @tamagoez
 /*.js @tamagoez
+/*.md @tamagoez
 /.github/ @tamagoez
 /components/ @tamagoez
 /files/*.sh @tamagoez
