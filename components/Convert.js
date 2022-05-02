@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 export function HeadTitle({ children }) {
-  const fixed_name = " - WikiNote"
+  const fixed_name = " - Minecraft WikiNote"
   return (
     <>
       <Head>
@@ -14,7 +14,7 @@ export function HeadTitle({ children }) {
       <h1 className="px-1 font-bold text-3xl text-base-900 border-solid border-b-4">
         {children}
       </h1>
-      <div className="pb-1" />
+      <div className="pb-1.5" />
     </>
   );
 }
@@ -47,7 +47,7 @@ export function ContentCode({ children }) {
   return (
     <>
       <div className="pt-1" />
-      <div className="rounded-md bg-base-800 pb-3 pt-3 shadow-md shadow-slate-800/50 overflow-x-auto">
+      <div className="rounded-md bg-base-content pb-3 pt-3 shadow-md shadow-slate-800/50 overflow-x-auto">
         <code className="pl-4 z-10 text-base-100 py-3">{children}</code>
       </div>
       <div className="pb-2" />
