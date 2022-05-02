@@ -34,11 +34,11 @@ export function ContentH2({ children }) {
 export function ContentH3({ children }) {
   return (
     <>
-      <div className="pb-2" />
+      <div className="pb-1" />
       <div className="border-dotted border-b-2 bg-base-500 pt-2">
         <h2 className="font-semibold text-base-800 text-xl">{children}</h2>
       </div>
-      <div className="pb-2" />
+      <div className="pb-1" />
     </>
   );
 }

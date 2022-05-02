@@ -6,6 +6,7 @@ import Footer from "/components/Footer";
 import { MDXProvider } from "@mdx-js/react";
 import { useEffect } from "react";
 import { themeChange } from "theme-change";
+import Scroll from "react-scroll";
 
 import {
   HeadTitle,
@@ -62,6 +63,7 @@ export default function Page({ Component, pageProps }) {
   };
 
   const router = useRouter();
+  const nowurlHash = window.location.hash;
   const nowurl = router.pathname;
   console.log("[_app.js] Access link: " + nowurl);
 
@@ -76,6 +78,8 @@ export default function Page({ Component, pageProps }) {
       </>
     );
   } else {
+    const ScrollAS = Scroll.animateScroll;
+    if (nowurlHash) {ScrollAS.scrollMore(65)}
     return (
       <>
         <HeadContents />
@@ -86,11 +90,11 @@ export default function Page({ Component, pageProps }) {
           <MDXProvider components={components}>
             <Component {...pageProps} />
           </MDXProvider>
-          <div className="pt-7">
+          <div className="py-3">
             <EditThisPage from={nowurl} lang="ja" />
           </div>
         </div>
-        <div className="py-4" />
+        <div className="py-3" />
         <Footer />
       </>
     );
