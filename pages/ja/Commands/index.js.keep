@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <>
       <Link href={nowurl + "/execute"}>
-        <p>execute</p>
+        <p>/execute</p>
       </Link>
     </>
   );

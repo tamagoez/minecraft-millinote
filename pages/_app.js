@@ -85,14 +85,14 @@ export default function Page({ Component, pageProps }) {
         <div className="sticky top-0">
           <NavBar />
         </div>
-        <div className="px-3 py-1 min-h-[83vh]">
+        <div className="px-3 py-1 min-h-[82vh]">
           <MDXProvider components={components}>
             <Component {...pageProps} />
           </MDXProvider>
-          <div className="pt-3" />
+          <div className="pt-6" />
           <EditThisPage from={nowurl} lang="ja" />
         </div>
-        <div className="py-3" />
+        <div className="pt-4" />
         <Footer />
       </>
     );
