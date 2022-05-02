@@ -4,7 +4,7 @@ export function HeadTitle({ children }) {
   return (
     <>
       <div className="pb-1" />
-      <h1 className="px-1 font-bold text-2xl text-base-900 border-solid border-b-3">
+      <h1 className="px-1 font-bold text-2xl text-base-900 border-solid border-b-4">
         {children}
       </h1>
       <div className="pb-2" />
@@ -16,7 +16,7 @@ export function ContentH2({ children }) {
   return (
     <>
       <div className="pb-1" />
-      <div className="border-dashed border-b-3 bg-base-500 pt-5">
+      <div className="border-dashed border-b-[3px] bg-base-500 pt-5">
         <h2 className="font-semibold text-lg text-base-900">{children}</h2>
       </div>
       <div className="pb-2" />
