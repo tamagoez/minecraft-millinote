@@ -63,7 +63,7 @@ export default function Page({ Component, pageProps }) {
   };
 
   const router = useRouter();
-  if (process.browser) { const nowurlHash = window.location.hash } else { const nowurlHash = null }
+  if (process.browser) { const nowurlHash = window.location.hash }
   const nowurl = router.pathname;
   console.log("[_app.js] Access link: " + nowurl);
 
@@ -79,7 +79,7 @@ export default function Page({ Component, pageProps }) {
     );
   } else {
     const ScrollAS = Scroll.animateScroll;
-    if (nowurlHash) {ScrollAS.scrollMore(65)}
+    if (process.browser) { if (nowurlHash) {ScrollAS.scrollMore(65)} }
     return (
       <>
         <HeadContents />
