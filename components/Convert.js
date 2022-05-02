@@ -11,10 +11,10 @@ export function HeadTitle({ children }) {
         <meta property="og:title" content={children + fixed_name} key="title" />
       </Head>
       <div className="pb-1" />
-      <h1 className="px-1 font-bold text-4xl text-base-900 border-solid border-b-4">
+      <h1 className="px-1 font-bold text-3xl text-base-900 border-solid border-b-4">
         {children}
       </h1>
-      <div className="pb-2" />
+      <div className="pb-1" />
     </>
   );
 }
@@ -24,7 +24,7 @@ export function ContentH2({ children }) {
     <>
       <div className="pb-1" />
       <div className="border-dashed border-b-[3px] bg-base-500 pt-5">
-        <h2 className="font-semibold text-base-900 text-2xl">{children}</h2>
+        <h2 className="font-semibold text-base-900 text-2xl" id={children}>{children}</h2>
       </div>
       <div className="pb-2" />
     </>
