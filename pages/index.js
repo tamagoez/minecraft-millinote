@@ -7,7 +7,20 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 import NavBar from "/components/NavBar";
 import Language from "/components/Language";
 
-export default function Home() {
+import { useRouter } from 'next/router'
+import Cookies from 'js-cookie'
+
+export default function App() {
+  const router = useRouter()
+  if (!Cookies.get('lang')){
+    return (<Content />)
+  } else {
+    router.push("/" + Cookies.get('lang'))
+    return (undefined)
+  }
+}
+
+export function Content() {
   const contentRef = useRef(null);
   return (
     <div>

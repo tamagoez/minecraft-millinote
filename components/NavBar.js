@@ -1,5 +1,7 @@
 import Link from "next/link";
 export default function NavBar() {
+  const lico = "🌞";
+  const dico = "🌙";
   return (
     <div className="sticky top-0 z-50 w-full">
       <div className="navbar bg-base-200/95">
@@ -80,9 +82,22 @@ export default function NavBar() {
             >
               <li>
                 <select data-choose-theme className="select select-bordered">
-                  <option value="light">🌞 Light</option>
-                  <option value="dark">🌙 Dark</option>
-                  <option value="corporate">Corporate</option>
+                  <option value="light">{lico} Light</option>
+                  <option value="dark">{dico} Dark</option>
+                  <option value="lofi">{lico} Lofi</option>
+                  <option value="night">{dico} Night</option>
+                  <option disabled>---</option>
+                  <option disabled>- {lico} -</option>
+                  <option value="emerald">{lico} Emerald</option>
+                  <option value="winter">{lico} Winter</option>
+                  <option value="cmyk">{lico} CMYK</option>
+                  <option value="garden">{lico} Garden</option>
+                  <option value="pastel">{lico} Pastel</option>
+                  <option value="corporate">{lico} Corporate</option>
+                  <option value="aqua">{lico} Aqua</option>
+                  <option disabled>- {dico} </option>
+                  <option value="dracula">{dico} Dracula</option>
+                  <option value="wireframe">{dico} Wireframe</option>
                 </select>
               </li>
             </ul>

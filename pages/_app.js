@@ -20,6 +20,7 @@ import {
 // https://zenn.dev/catnose99/articles/bb943c3dc99d89
 import Head from "next/head";
 import EditThisPage from "/components/EditThisPage";
+import NextNProgress from "nextjs-progressbar";
 
 export function reportWebVitals(metric) {
   console.log(metric);
@@ -38,6 +39,7 @@ export function HeadContents() {
           rel="stylesheet"
         />
       </Head>
+      <NextNProgress />
     </>
   );
 }
@@ -80,7 +82,7 @@ export default function Page({ Component, pageProps }) {
         <div className="sticky top-0">
           <NavBar />
         </div>
-        <div className="px-3 py-1 min-h-[60vh]">
+        <div className="px-3 py-1 min-h-[75vh]">
           <MDXProvider components={components}>
             <Component {...pageProps} />
           </MDXProvider>

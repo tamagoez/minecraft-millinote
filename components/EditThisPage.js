@@ -27,7 +27,7 @@ export default function EditThisPage({ from, lang }) {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-outline btn-sm"
+          className="btn btn-outline btn-sm hover:motion-safe:animate-pulse"
         >
           <FaPen />
           <div className="px-1" />
