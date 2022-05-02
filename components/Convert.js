@@ -4,7 +4,7 @@ export function HeadTitle({ children }) {
   return (
     <>
       <div className="pb-1" />
-      <h1 className="px-1 font-bold text-2xl text-base-900 border-solid border-b-2">
+      <h1 className="px-1 font-bold text-2xl text-base-900 border-solid border-b-3">
         {children}
       </h1>
       <div className="pb-2" />
@@ -77,7 +77,7 @@ export function ContentA({ href, children }) {
 export function ContentUl({ children }) {
   return (
     <>
-      <ul className="list-disc pl-4">{children}</ul>
+      <ul className="list-disc pl-7">{children}</ul>
     </>
   )
 }
