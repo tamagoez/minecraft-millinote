@@ -1,3 +1,5 @@
+import remarkGfm from 'remark-gfm';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true
@@ -5,7 +7,7 @@ const nextConfig = {
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [require("remark-gfm")],
+    remarkPlugins: [remarkGfm],
     rehypePlugins: [],
     // If you use `MDXProvider`, uncomment the following line.
     providerImportSource: "@mdx-js/react",
