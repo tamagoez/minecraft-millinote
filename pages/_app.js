@@ -79,7 +79,6 @@ export default function Page({ Component, pageProps }) {
     );
   } else {
     const ScrollAS = Scroll.animateScroll;
-    if (process.browser) { if (nowurlHash) {ScrollAS.scrollMore(65)} }
     return (
       <>
         <HeadContents />
