@@ -15,7 +15,7 @@ export default function App() {
   if (!Cookies.get('lang')){
     return (<Content />)
   } else {
-    router.push("/" + Cookies.get('lang'))
+    router.replace("/" + Cookies.get('lang'))
     return (undefined)
   }
 }

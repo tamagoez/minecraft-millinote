@@ -89,7 +89,7 @@ export default function Page({ Component, pageProps }) {
           <MDXProvider components={components}>
             <Component {...pageProps} />
           </MDXProvider>
-          <div className="py-3">
+          <div className="pt-3">
             <EditThisPage from={nowurl} lang="ja" />
           </div>
         </div>
