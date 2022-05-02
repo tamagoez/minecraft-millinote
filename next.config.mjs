@@ -6,6 +6,7 @@ import NextMDX from '@next/mdx'
 const nextConfig = {
   reactStrictMode: true
 };
+
 const withMDX = NextMDX({
   extension: /\.mdx?$/,
   options: {
@@ -15,7 +16,8 @@ const withMDX = NextMDX({
     providerImportSource: "@mdx-js/react",
   }
 });
-module.exports = withMDX({
+
+export default withMDX({
   // Append the default value with md extensions
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"]
 });
