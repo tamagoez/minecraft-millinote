@@ -16,7 +16,7 @@ export function ContentH2({ children }) {
   return (
     <>
       <div className="pb-1" />
-      <div className="border-dotted border-b-2 bg-base-500 pt-2">
+      <div className="border-dashed border-b-3 bg-base-500 pt-5">
         <h2 className="font-semibold text-lg text-base-900">{children}</h2>
       </div>
       <div className="pb-2" />
@@ -28,8 +28,8 @@ export function ContentH3({ children }) {
   return (
     <>
       <div className="pb-1" />
-      <div className="border-dashed border-b-4 bg-base-500 pt-5">
-        <h2 className="font-semibold text-lg text-base-800">{children}</h2>
+      <div className="border-dotted border-b-2 bg-base-500 pt-2">
+        <h2 className="font-semibold text-base text-base-800">{children}</h2>
       </div>
       <div className="pb-2" />
     </>
@@ -43,6 +43,7 @@ export function ContentCode({ children }) {
       <div className="rounded-md bg-base-content pb-3 pt-3 shadow-md shadow-slate-800/50 overflow-x-auto">
         <code className="px-3 z-10 text-base-200 py-3">{children}</code>
       </div>
+      <div className="pb-2" />
     </>
   );
 }
@@ -76,7 +77,7 @@ export function ContentA({ href, children }) {
 export function ContentUl({ children }) {
   return (
     <>
-      <ul className="list-disc">{children}</ul>
+      <ul className="list-disc pl-4">{children}</ul>
     </>
   )
 }
