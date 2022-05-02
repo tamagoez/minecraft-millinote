@@ -4,7 +4,7 @@ import Cookies from 'js-cookie'
 export default function Language() {
   const router = useRouter()
   function clicklang(language){
-    Cookies.set('lang', langugae)
+    Cookies.set('lang', language)
     router.push("/" + language)
   }
   return (
