@@ -1,8 +1,14 @@
 import Link from "next/link";
+import Head from "next/head";
+import Image from "next/image";
 
 export function HeadTitle({ children }) {
   return (
     <>
+      <Head>
+        <title>{children}</title>
+        <meta property="og:title" content={children} key="title" />
+      </Head>
       <div className="pb-1" />
       <h1 className="px-1 font-bold text-2xl text-base-900 border-solid border-b-4">
         {children}
@@ -27,7 +33,7 @@ export function ContentH2({ children }) {
 export function ContentH3({ children }) {
   return (
     <>
-      <div className="pb-1" />
+      <div className="pb-2" />
       <div className="border-dotted border-b-2 bg-base-500 pt-2">
         <h2 className="font-semibold text-base text-base-800">{children}</h2>
       </div>
@@ -68,13 +74,21 @@ export function ContentA({ href, children }) {
   return (
     <>
       <Link href={href} passHref>
-        <p className="underline decoration-1 hover:decoration-2">{children}</p>
+        <p className="underline decoration-1 text-base-600 hover:text-sky-700 cursor-pointer">{children}</p>
       </Link>
     </>
   );
 }
 
 export function ContentUl({ children }) {
+  return (
+    <>
+      <ul className="list-disc pl-7">{children}</ul>
+    </>
+  )
+}
+
+export function ContentImg({ children }) {
   return (
     <>
       <ul className="list-disc pl-7">{children}</ul>

@@ -88,7 +88,7 @@ export default function Page({ Component, pageProps }) {
             <EditThisPage from={nowurl} lang="ja" />
           </div>
         </div>
-        <div className="pt-4" />
+        <div className="py-4" />
         <Footer />
       </>
     );
