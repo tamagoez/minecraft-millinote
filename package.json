@@ -1,4 +1,6 @@
 {
+  "name": "minecraft-wikinote",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -34,6 +36,6 @@
     "react-scroll": "^1.8.7",
     "js-cookie": "^3.0.1",
     "nextjs-progressbar": "^0.0.14",
-    "rematk-gfm": "^3.0.1"
+    "remark-gfm": "^3.0.1"
   }
 }
