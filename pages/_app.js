@@ -12,8 +12,10 @@ import {
   ContentP,
   ContentH2,
   ContentCode,
-  ContentLink,
-  ContentB
+  ContentA,
+  ContentB,
+  ContentH3,
+  ContentUl
 } from "/components/Convert";
 // https://zenn.dev/catnose99/articles/bb943c3dc99d89
 import Head from "next/head";
@@ -51,8 +53,10 @@ export default function Page({ Component, pageProps }) {
     p: ContentP,
     h2: ContentH2,
     code: ContentCode,
-    a: ContentLink,
+    a: ContentA,
     b: ContentB,
+    h3: ContentH3,
+    ul: ContentUl,
   };
 
   const router = useRouter();
