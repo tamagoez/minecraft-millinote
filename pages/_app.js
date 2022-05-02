@@ -84,11 +84,11 @@ export default function Page({ Component, pageProps }) {
           <MDXProvider components={components}>
             <Component {...pageProps} />
           </MDXProvider>
-          <div className="pt-6">
+          <div className="pt-7">
             <EditThisPage from={nowurl} lang="ja" />
           </div>
         </div>
-        <div className="py-4" />
+        <div className="pt-4" />
         <Footer />
       </>
     );
