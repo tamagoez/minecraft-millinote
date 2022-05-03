@@ -60,7 +60,7 @@ export function ContentCode({ children }) {
       <div className="pt-1" />
       <div className="rounded-md bg-base-content pb-3 pt-3 shadow-md shadow-slate-800/50 overflow-x-auto">
         <div className="pl-4 z-10 py-1">
-        <code className="text-base-100 text-mono">{children}</code>
+        <code className="text-base-100 font-mono">{children}</code>
         </div>
       </div>
       <div className="pb-2" />
