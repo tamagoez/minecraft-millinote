@@ -4,9 +4,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    fontFamily: {
-      'googlefonts': ['"Open Sans"', '"Noto Sans JP"'],
+    extend: {
+      fontFamily: {
+        'sans': ['"Open Sans"', '"Noto Sans JP"'],
+      }
     },
   }
   plugins: [require("daisyui")],
