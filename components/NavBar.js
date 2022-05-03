@@ -37,7 +37,7 @@ export default function NavBar() {
           </div>
           <div className="block sm:hidden">
             <Link href="/" passHref>
-              <span className="btn btn-ghost normal-case text-sm tracking-tight font-mono text-bold">
+              <span className="btn btn-ghost text-left normal-case text-sm tracking-tight font-mono text-bold">
                 Minecraft WikiNote
               </span>
             </Link>
