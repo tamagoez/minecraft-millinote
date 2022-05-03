@@ -25,12 +25,12 @@ GitHub Actionsが処理を行い、`deploy`を付けてpullするので不要で
 `sitemap.xml`は一々手で変更するのは手間がかかりミスする可能性もあるので、`next-sitemap`を使用して自動生成しています。
 
 ## 謝辞(敬語略)
-### Minecraft
+### [Minecraft](https://www.minecraft.net)
 Minecraftを開発した**Mojang AB**及び**Microsoft**に感謝申し上げます。
-### Next.js と Vercel
+### [Next.js](https://nextjs.org) と [Vercel](https://vercel.com)
 無料で爆速のサイトを運営してくださる**Vercel**に感謝申し上げます。  
 また、軽量なページを生成してくださる**Next.js**にも感謝申し上げます。
-### doanryo
+### [doanryo](https://github.com/doanryo)
 そもそもNext.jsやVercelを知ったのは、**ナポアンのマイクラ**を知ったからでした。  
 このリポジトリも過去作られていた**ASOBINON**をインスパイアさせて頂いたものです。  
 素晴らしい出会いをもたらしてくださった**doanryo**に最大の感謝を申し上げます。
