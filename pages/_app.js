@@ -83,7 +83,7 @@ export default function Page({ Component, pageProps }) {
   } else {
     const ScrollAS = Scroll.animateScroll;
     if (nowurl.indexOf('#') != -1) {
-      ScrollAS.scrollMore(65)
+      ScrollAS.scrollMore(-65)
     }
     return (
       <>
