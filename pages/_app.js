@@ -41,7 +41,9 @@ export function HeadContents() {
           rel="stylesheet"
         />
       </Head>
-      <NextNProgress />
+      <NextNProgress
+        options={{ showSpinner: false }}
+      />
     </>
   );
 }
