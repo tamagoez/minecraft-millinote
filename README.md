@@ -21,14 +21,14 @@ GitHub Actionsが処理を行い、`deploy`を付けてpullするので不要で
 ## 技術的な面について
 多分全然カッコイイコードは書いていません。  
 フレームワークは**Next.js**を使用して、**Vecel**でデプロイしています。  
-`@next/mdx`を使ってmdxファイルをパースし、`@mdx/react`で`Tailwindcss`を使った独自コンポーネントに変換しています。  
+`@next/mdx`を使ってmdxファイルをパースし、`@mdx-js/react`で`Tailwindcss`を使った独自コンポーネントに変換しています。  
 `sitemap.xml`は一々手で変更するのは手間がかかりミスする可能性もあるので、`next-sitemap`を使用して自動生成しています。
 
 ## 謝辞(敬語略)
 ### Minecraft
 Minecraftを開発した**Mojang AB**及び**Microsoft**に感謝申し上げます。
 ### Next.js と Vercel
-無料で爆速のサイトを運営してくださる**Vercel**に感謝申し上げます。
+無料で爆速のサイトを運営してくださる**Vercel**に感謝申し上げます。  
 また、軽量なページを生成してくださる**Next.js**にも感謝申し上げます。
 ### doanryo
 そもそもNext.jsやVercelを知ったのは、**ナポアンのマイクラ**を知ったからでした。  
