@@ -76,7 +76,7 @@ export function ContentA({ href, children }) {
   // https://hataworakuni.net/check-included-words-in-javascript
   // 比較による文字列有無の判定
   if (href.indexOf('.') != -1) {
-    console.log('文字列が含まれています。');
+    console.log("Include '.': " + href);
     return (
     <>
       <Link href={href} passHref>
@@ -91,7 +91,7 @@ export function ContentA({ href, children }) {
     </>
   );
   } else {
-    console.log('文字列が含まれていません。');
+    console.log('No '.': ' + href);
     return (
     <>
       <Link href={href} passHref>
