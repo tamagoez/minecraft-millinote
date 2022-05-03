@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'body': ['"Open Sans"', '"Noto Sans JP"'],
+      'googlefonts': ['"Open Sans"', '"Noto Sans JP"'],
     },
   }
   plugins: [require("daisyui")],
