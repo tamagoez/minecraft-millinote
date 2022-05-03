@@ -78,7 +78,7 @@ export default function Page({ Component, pageProps }) {
       ScrollAS.scrollMore(-65)
     }
     return (
-      <>
+      <main className="text-googlefonts">
         <HeadContents />
         <div className="sticky top-0">
           <NavBar />
@@ -92,7 +92,7 @@ export default function Page({ Component, pageProps }) {
         </div>
         <div className="pt-4" />
         <Footer />
-      </>
+      </main>
     );
   }
 }
