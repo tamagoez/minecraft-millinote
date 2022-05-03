@@ -5,7 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
-  },
+    fontFamily: {
+      'body': ['"Open Sans"', '"Noto Sans JP"'],
+    },
+  }
   plugins: [require("daisyui")],
   daisyui: {
     themes: ["light", "dark", "night", "corporate", "emerald", "winter", "dracula", "cmyk", "garden", "aqua", "lofi", "pastel", "wireframe"],
