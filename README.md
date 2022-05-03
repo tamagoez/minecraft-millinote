@@ -15,7 +15,7 @@ Note which making together with begginer player.
 Vercelが勝手に動いてしまうのが好きではないので、[`/files/vercel-ignored-build-step.sh`](https://github.com/tamagoez/minecraft-wikinote/blob/main/files/vercel-ignored-build-step.sh)を使って、コミットメッセージに **`deploy`** 又は **`*`** が含まれるときのみデプロイされます。  
 
 **`documents`フォルダー内を編集した場合は、`deploy` `*`をコミットメッセージに含めないでください!**  
-GitHub Actionsが処理を行い、`deploy`を付けてpullするので不要です。
+GitHub Actionsが**10分毎に処理を行い**、`deploy`を付けてpullするので不要です。
 `README.md`や一時的な保存の場合も含めないでください。
 
 ## 技術的な面について
