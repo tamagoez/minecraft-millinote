@@ -78,6 +78,9 @@ export default function Page({ Component, pageProps }) {
     );
   } else {
     const ScrollAS = Scroll.animateScroll;
+    if (targetStr.indexOf('#') != -1) {
+      ScrollAS.scrollMore(65)
+    }
     return (
       <>
         <HeadContents />
