@@ -27,6 +27,7 @@ export function ContentH2({ children }) {
       <div className="pb-1" />
       <div className="border-dashed border-b-[3px] bg-base-500 pt-5">
         <h2 className="font-semibold text-base-900 text-2xl" id={children}>{children}</h2>
+        <Link href={"#" + children}><p className="pl-2 text-base-600 text-2xl">#<p></Link>
       </div>
       <div className="pb-2" />
     </>
@@ -38,7 +39,8 @@ export function ContentH3({ children }) {
     <>
       <div className="pb-1" />
       <div className="border-dotted border-b-2 bg-base-500 pt-2">
-        <h2 className="font-medium text-base-800 text-xl">{children}</h2>
+        <h2 className="font-medium text-base-800 text-xl" id={children}>{children}</h2>
+        <Link href={"#" + children}><p className="pl-2 text-base-600 text-xl">#<p></Link>
       </div>
       <div className="pb-1" />
     </>
