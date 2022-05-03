@@ -34,7 +34,7 @@ export function ContentH2({ children }) {
       <div className="pb-1" />
       <div className="border-dashed border-b-[3px] pt-5 flex">
         <h2 className="font-semibold text-base-900 text-2xl" id={children}>{children}</h2>
-        <Link href={"#" + children}><p className="pl-2 text-base-400 text-2xl font-normal hover:font-semibold hover:text-600" onClick={() => movenav()}>#</p></Link>
+        <Link href={"#" + children}><p className="pl-2 cursor-pointer text-base-400 text-2xl font-normal hover:font-semibold hover:text-600" onClick={() => movenav()}>#</p></Link>
       </div>
       <div className="pb-2" />
     </>
@@ -47,7 +47,7 @@ export function ContentH3({ children }) {
       <div className="pb-1" />
       <div className="border-dotted border-b-2 pt-2 flex">
         <h2 className="font-medium text-base-800 text-xl" id={children}>{children}</h2>
-        <Link href={"#" + children}><p className="pl-2 text-base-400 hover:text-base-600 text-xl font-normal hover:font-semibold" onClick={() => movenav()}>#</p></Link>
+        <Link href={"#" + children}><p className="pl-2 cursor-pointer text-base-400 hover:text-base-600 text-xl font-normal hover:font-semibold" onClick={() => movenav()}>#</p></Link>
       </div>
       <div className="pb-1" />
     </>
