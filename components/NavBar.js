@@ -37,7 +37,7 @@ export default function NavBar() {
           </div>
         </div>
         <div className="navbar-center">
-          <Link href="/">
+          <Link href="/" passHref>
             <span className="btn btn-ghost normal-case sm:text-lg text-sm">
               Minecraft WikiNote
             </span>
@@ -86,7 +86,6 @@ export default function NavBar() {
                   <option value="dark">{dico} Dark</option>
                   <option value="lofi">{lico} Lofi</option>
                   <option value="night">{dico} Night</option>
-                  <option disabled>---</option>
                   <option disabled>- {lico} -</option>
                   <option value="emerald">{lico} Emerald</option>
                   <option value="winter">{lico} Winter</option>
