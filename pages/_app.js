@@ -16,7 +16,8 @@ import {
   ContentA,
   ContentB,
   ContentH3,
-  ContentUl
+  ContentUl,
+  ContentImg
 } from "/components/Convert";
 // https://zenn.dev/catnose99/articles/bb943c3dc99d89
 import Head from "next/head";
@@ -60,6 +61,7 @@ export default function Page({ Component, pageProps }) {
     b: ContentB,
     h3: ContentH3,
     ul: ContentUl,
+    img: ContentImg
   };
 
   const router = useRouter();
@@ -78,7 +80,7 @@ export default function Page({ Component, pageProps }) {
     );
   } else {
     const ScrollAS = Scroll.animateScroll;
-    if (targetStr.indexOf('#') != -1) {
+    if (nowurl.indexOf('#') != -1) {
       ScrollAS.scrollMore(65)
     }
     return (
