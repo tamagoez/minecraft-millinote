@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
+// import { useRouter } from "next/router";
 
 export function HeadTitle({ children }) {
   const fixed_name = " - Minecraft WikiNote"
@@ -103,10 +104,10 @@ export function ContentUl({ children }) {
   )
 }
 
-export function ContentImg({ children }) {
+export function ContentImg({ src, width, height }) {
   return (
     <>
-      <ul className="list-disc pl-7">{children}</ul>
+      <Image src={src} width={width} height={height} />
     </>
   )
 }
