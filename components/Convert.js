@@ -73,7 +73,11 @@ export function ContentB({ children }) {
 }
 
 export function ContentA({ href, children }) {
-  return (
+  // https://hataworakuni.net/check-included-words-in-javascript
+  // 比較による文字列有無の判定
+  if (href.indexOf('.') != -1) {
+    console.log('文字列が含まれています。');
+    return (
     <>
       <Link href={href} passHref>
         <a
@@ -86,6 +90,20 @@ export function ContentA({ href, children }) {
       </Link>
     </>
   );
+  } else {
+    console.log('文字列が含まれていません。');
+    return (
+    <>
+      <Link href={href} passHref>
+        <a
+          className="underline decoration-1 text-base-600 hover:text-sky-600 cursor-pointer"
+        >
+              {children}
+        </a>
+      </Link>
+    </>
+  );
+  }
 }
 
 export function ContentDel({ children }) {
