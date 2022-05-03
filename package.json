@@ -32,7 +32,6 @@
     "postcss": "^8.4.12",
     "autoprefixer": "^10.4.5",
     "next-sitemap": "^2.5.20",
-    "pace-js": "^1.2.4",
     "react-scroll": "^1.8.7",
     "js-cookie": "^3.0.1",
     "nextjs-progressbar": "^0.0.14",
