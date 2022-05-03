@@ -63,7 +63,6 @@ export default function Page({ Component, pageProps }) {
   };
 
   const router = useRouter();
-  if (process.browser) { const nowurlHash = window.location.hash }
   const nowurl = router.pathname;
   console.log("[_app.js] Access link: " + nowurl);
 
