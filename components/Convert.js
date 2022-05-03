@@ -122,10 +122,10 @@ export function ContentUl({ children }) {
   )
 }
 
-export function ContentImg({ src, width, height }) {
+export function ContentImg({ src, alt, width, height }) {
   return (
     <>
-      <Image src={src} width={width} height={height} />
+      <Image src={src} alt={alt} width={width} height={height} />
     </>
   )
 }
