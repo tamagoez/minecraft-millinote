@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
+import ParseURL from "/lib/ParseURL";
 
 export function HeadTitle({ children }) {
   const fixed_name = " - Minecraft WikiNote"
@@ -73,13 +74,15 @@ export function ContentB({ children }) {
 }
 
 export function ContentA({ href, children }) {
+  const router = useRouter();
+  const linkurl = ParseURL(href, router.pathname)
   // https://hataworakuni.net/check-included-words-in-javascript
   // 比較による文字列有無の判定
-  if (href.indexOf('.') != -1) {
-    console.log("Include '.': " + href);
+  if (linkurl.indexOf('.') != -1) {
+    console.log("Include '.' " + linkurl)
     return (
     <>
-      <Link href={href} passHref>
+      <Link href={linkurl} passHref>
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -89,12 +92,12 @@ export function ContentA({ href, children }) {
         </a>
       </Link>
     </>
-  );
+    )
   } else {
-    console.log("No '.': " + href);
+    console.log("No '.': " + linkurl);
     return (
     <>
-      <Link href={href} passHref>
+      <Link href={linkurl} passHref>
         <a
           className="underline decoration-1 text-base-600 hover:text-sky-600 cursor-pointer"
         >
