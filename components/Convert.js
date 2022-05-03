@@ -91,7 +91,7 @@ export function ContentA({ href, children }) {
     </>
   );
   } else {
-    console.log('No '.': ' + href);
+    console.log("No '.': " + href);
     return (
     <>
       <Link href={href} passHref>
