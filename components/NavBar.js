@@ -35,13 +35,22 @@ export default function NavBar() {
               </li>
             </ul>
           </div>
+          <div className="block sm:hidden">
+            <Link href="/" passHref>
+              <span className="btn btn-ghost normal-case text-sm">
+                Minecraft WikiNote
+              </span>
+            </Link>
+          </div>
         </div>
         <div className="navbar-center">
-          <Link href="/" passHref>
-            <span className="btn btn-ghost normal-case sm:text-lg text-xs">
-              Minecraft WikiNote
-            </span>
-          </Link>
+          <div className="hidden sm:block>
+            <Link href="/" passHref>
+              <span className="btn btn-ghost normal-case text-lg">
+                Minecraft WikiNote
+              </span>
+            </Link>
+          </div>
         </div>
         <div className="navbar-end">
           <button className="btn btn-ghost btn-circle">
