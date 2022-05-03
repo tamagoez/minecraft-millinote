@@ -44,7 +44,7 @@ export default function NavBar() {
           </div>
         </div>
         <div className="navbar-center">
-          <div className="hidden sm:block>
+          <div className="hidden sm:block">
             <Link href="/" passHref>
               <span className="btn btn-ghost normal-case text-lg">
                 Minecraft WikiNote
