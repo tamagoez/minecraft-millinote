@@ -43,7 +43,7 @@ export default function NavBar() {
             </Link>
           </div>
         </div>
-        <div className="navbar-center">
+        <div className="navbar-center hidden sm:block">
           <div className="hidden sm:block">
             <Link href="/" passHref>
               <span className="btn btn-ghost normal-case text-lg">
