@@ -1,9 +1,10 @@
 import Cookies from 'js-cookie'
 import { useRouter } from 'next/router'
 
+const router = useRouter();
+
 function SelectLanguageCookie() {
     function SetLanguage(lang) {
-        const router = useRouter();
         Cookies.set('lang', lang)
         router.reload()
     }
