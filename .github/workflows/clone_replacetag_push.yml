@@ -33,6 +33,7 @@ jobs:
       - name: Clone
         run: |
           mkdir arrange
+          rm -rfv ./clone
           mkdir clone
           git clone https://github.com/ripenote/docs-minecraft-ripenote.git clone
           rm -rfv ./clone/.github
