@@ -2,10 +2,10 @@ import Cookies from 'js-cookie'
 
 export default function Footer(lang) {
   function lastcontribute() {
-    const lastsha = process.env.VERCEL_GIT_COMMIT_SHA
+    const lastsha = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA
     const arrangesha = lastsha.substring(0,7)
-    const message = process.env.VERCEL_GIT_COMMIT_MESSAGE
-    const author = process.env.VERCEL_GIT_COMMIT_AUTHOR_NAME
+    const message = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_MESSAGE
+    const author = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_AUTHOR_NAME
     return (
       <>
         Last update: {message} by <p className="text-bold">{author}</p> ({arrangesha})
