@@ -2,6 +2,7 @@ import Cookies from 'js-cookie'
 import { useRouter } from 'next/router'
 
 function SelectLanguageCookie() {
+    const router = useRouter();
     function SetLanguage(lang) {
         Cookies.set('lang', lang)
         router.reload()
@@ -23,6 +24,7 @@ function SelectLanguageCookie() {
 }
 
 function SelectViewPage() {
+    const router = useRouter();
     function ViewLanguage(lang) {
         let accessurl = router.pathname;
         accessurl = accessurl.substring(1);
@@ -44,7 +46,6 @@ function SelectViewPage() {
 }
 
 export default function LangSelect() {
-    const router = useRouter();
     if (!Cookies.get('lang')) {
         return (
             <>

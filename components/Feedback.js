@@ -6,7 +6,7 @@ export default function Feedback() {
             <input type="checkbox" id="feedback-modal" className="modal-toggle" />
             <label htmlFor="feedback-modal" className="modal cursor-pointer">
                 <label className="modal-box relative" htmlFor="">
-                    <ifame width="100%" height="100%" src="https://m.kuku.lu/f.php?796acf2864" />
+                    <iframe src="https://m.kuku.lu/f.php?796acf2864" />
                 </label>
             </label>
         </>
