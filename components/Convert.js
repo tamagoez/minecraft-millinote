@@ -6,9 +6,11 @@ import ParseURL from "/lib/ParseURL";
 
 import { animateScroll as scroll } from "react-scroll";
 function movenav() {
-  setTimeout(function(){
-    scroll.scrollMore(-65)
-  },100);
+  scroll.scrollMore(-65, {
+    smooth: false,
+    duration: 0,
+    delay: 100,
+  })
 }
 
 export function HeadTitle({ children }) {
