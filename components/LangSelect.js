@@ -30,7 +30,7 @@ function SelectViewPage() {
         accessurl = accessurl.substring(1);
         // https://www.fenet.jp/dotnet/column/tool/6690/
         const nextslash = accessurl.indexOf('/');
-        const arrangedurl = "/" + lang + accessurl.substring(nextslash + 1)
+        const arrangedurl = "/" + lang + "/" + accessurl.substring(nextslash + 1)
         console.log("[SelectViewPage] Arranged: " + arrangedurl)
         router.push(arrangedurl)
     }
