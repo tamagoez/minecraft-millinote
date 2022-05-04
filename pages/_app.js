@@ -95,7 +95,7 @@ export default function Page({ Component, pageProps }) {
           <NavBar />
         </div>
         <div className="top-50 left-0 fixed z-50">
-          <label for="feedback-modal" className="btn modal-button"><MdFeedback /> Feedback</label>
+          <label htmlFor="feedback-modal" className="btn modal-button"><MdFeedback /> Feedback</label>
           <Feedback />
         </div>
         <div className="px-3 pt-1 min-h-[83vh]">
