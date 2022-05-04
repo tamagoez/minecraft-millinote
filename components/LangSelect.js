@@ -12,7 +12,7 @@ function SelectLanguageCookie() {
         <>
             <div className="tooltip tooltip-open tooltip-bottom" data-tip="This will save to your Cookie and never ask">
                 <div className="dropdown">
-                    <label tabIndex="0" className="btn m-1">Set Language</label>
+                    <label tabIndex="0" className="btn m-1"><RiTranslate2 /><p className="px-1" />Set Language</label>
                     <ul tabIndex="0" className="dropdown-content menu p-2 shadow-md bg-base-200 rounded-box w-52">
                         <li><p onClick={() => SetLanguage('en')}>English</p></li>
                         <li><p onClick={() => SetLanguage('ja')}>日本語</p></li>
@@ -38,7 +38,7 @@ function SelectViewPage() {
     return (
         <>
             <div className="dropdown">
-                <label tabIndex="0" className="btn btn-sm btn-outline m-1"><RiTranslate2 /><p className="py-1" />Language</label>
+                <label tabIndex="0" className="btn btn-sm btn-outline m-1"><RiTranslate2 /><p className="px-1" />Language</label>
                 <ul tabIndex="0" className="dropdown-content menu p-3 shadow-md bg-base-200 rounded-box w-52">
                     <li><p onClick={() => ViewLanguage('en')}>English</p></li>
                     <li><p onClick={() => ViewLanguage('ja')}>日本語</p></li>
