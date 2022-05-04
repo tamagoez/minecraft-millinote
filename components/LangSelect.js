@@ -37,7 +37,7 @@ function SelectViewPage() {
     return (
         <>
             <div className="dropdown">
-                <label tabIndex="0" className="btn m-1">Language</label>
+                <label tabIndex="0" className="btn btn-sm btn-outline m-1"><RiTranslate2 /><p className="py-1" />Language</label>
                 <ul tabIndex="0" className="dropdown-content menu p-3 shadow-md bg-base-200 rounded-box w-52">
                     <li><p onClick={() => ViewLanguage('en')}>English</p></li>
                     <li><p onClick={() => ViewLanguage('ja')}>日本語</p></li>

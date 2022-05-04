@@ -95,11 +95,11 @@ export default function Page({ Component, pageProps }) {
           <NavBar />
         </div>
         <div className="bottom-20 left-0 fixed z-50">
-          <label htmlFor="feedback-modal" className="btn modal-button opacity-70 hover:opacity-90"><MdFeedback /><p className="px-1"/>Feedback</label>
+          <label htmlFor="feedback-modal" className="btn btn-square modal-button opacity-70 hover:opacity-95"><MdFeedback /><p className="px-1"/>Feedback</label>
           <Feedback />
         </div>
         <div className="px-3 pt-1 min-h-[83vh]">
-          <div className="py-1">
+          <div className="py-1 z-0">
             <LangSelect />
           </div>
           <MDXProvider components={components}>
