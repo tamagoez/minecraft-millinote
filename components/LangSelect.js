@@ -1,5 +1,6 @@
 import Cookies from 'js-cookie'
 import { useRouter } from 'next/router'
+import { RiTranslate2 } from 'react-icons/ri'
 
 function SelectLanguageCookie() {
     const router = useRouter();
