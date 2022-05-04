@@ -37,8 +37,8 @@ export function HeadContents() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NextNProgress
-        startPosition={0.4}
-        stopDelayMs={200}
+        startPosition={0.5}
+        stopDelayMs={150}
         height={4}
         showOnShallow={true}
         options={{ showSpinner: false, }}
