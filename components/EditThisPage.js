@@ -1,8 +1,11 @@
 import Link from "next/link";
 import { FaPen } from "react-icons/fa";
-export default function EditThisPage({ from, lang }) {
+import Cookies from 'js-cookie'
+
+export default function EditThisPage({ from }) {
+  const lang = Cookies.get('lang')
   const hreflink =
-    "https://github.com/tamagoez/minecraft-wikinote/edit/main/documents" +
+    "https://github.com/ripenote/docs-minecraft-ripenote/edit/main" +
     from +
     ".mdx";
   if (lang === "ja") {
