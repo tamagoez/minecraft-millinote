@@ -1,13 +1,12 @@
 import Cookies from 'js-cookie'
 import { useRouter } from 'next/router'
 
-function SetLanguage(lang) {
-    const router = useRouter();
-    Cookies.set('lang', lang)
-    router.reload()
-}
-
 function SelectLanguageCookie() {
+    function SetLanguage(lang) {
+        const router = useRouter();
+        Cookies.set('lang', lang)
+        router.reload()
+    }
     return (
         <>
             <div className="tooltip tooltip-open tooltip-bottom" data-tip="This will save to your Cookie and never ask">
@@ -24,15 +23,14 @@ function SelectLanguageCookie() {
     )
 }
 
-function ViewLanguage(lang) {
-    let accessurl = router.pathname;
-    accessurl = accessurl.substring(1);
-    // https://www.fenet.jp/dotnet/column/tool/6690/
-    const nextslash = accessurl.indexOf('/');
-    router.push(accessurl.substring(0, nextslash + 1))
-}
-
 function SelectViewPage() {
+    function ViewLanguage(lang) {
+        let accessurl = router.pathname;
+        accessurl = accessurl.substring(1);
+        // https://www.fenet.jp/dotnet/column/tool/6690/
+        const nextslash = accessurl.indexOf('/');
+        router.push(accessurl.substring(0, nextslash + 1))
+    }
     return (
         <>
             <div className="dropdown">
