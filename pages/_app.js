@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import { themeChange } from "theme-change";
 import Scroll from "react-scroll";
 import LangSelect from "/components/LangSelect"
-import { MdFeedback } from 'react-icon/md'
+import { MdFeedback } from 'react-icons/md'
 
 import {
   HeadTitle,
