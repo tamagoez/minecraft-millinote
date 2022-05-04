@@ -1,5 +1,5 @@
 // This page use parent index
-import top from "../index";
+import { Content } from "../index";
 export default function Index() {
-  return top();
+  return Content();
 }
