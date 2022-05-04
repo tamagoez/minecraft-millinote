@@ -95,7 +95,7 @@ export default function Page({ Component, pageProps }) {
           <NavBar />
         </div>
         <div className="bottom-20 left-0 fixed z-50">
-          <label htmlFor="feedback-modal" className="btn rounded-none rounded-r-lg modal-button opacity-80 hover:opacity-95"><MdFeedback /><p className="px-1"/>Feedback</label>
+          <label htmlFor="feedback-modal" className="btn glass rounded-none rounded-r-lg modal-button opacity-80 hover:opacity-95"><MdFeedback /><p className="px-1"/>Feedback</label>
           <Feedback />
         </div>
         <div className="px-3 pt-1 min-h-[83vh]">
