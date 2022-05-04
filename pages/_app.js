@@ -18,7 +18,8 @@ import {
   ContentB,
   ContentH3,
   ContentUl,
-  ContentImg
+  ContentImg,
+  ContentHr
 } from "/components/Convert";
 // https://zenn.dev/catnose99/articles/bb943c3dc99d89
 import Head from "next/head";
@@ -37,8 +38,8 @@ export function HeadContents() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NextNProgress
-        startPosition={0.5}
-        stopDelayMs={150}
+        startPosition={0.45}
+        stopDelayMs={180}
         height={4}
         showOnShallow={true}
         options={{ showSpinner: false, }}
@@ -62,7 +63,8 @@ export default function Page({ Component, pageProps }) {
     b: ContentB,
     h3: ContentH3,
     ul: ContentUl,
-    img: ContentImg
+    img: ContentImg,
+    hr: ContentHr,
   };
 
   const router = useRouter();

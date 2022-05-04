@@ -145,3 +145,11 @@ export function ContentImg({ src, alt, width, height }) {
     </>
   )
 }
+
+export function hr({children}) {
+  return (
+    <>
+      <div className="divider">{children}</div>
+    </>
+  )
+}
