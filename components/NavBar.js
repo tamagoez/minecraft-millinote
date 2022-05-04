@@ -70,7 +70,7 @@ export default function NavBar() {
   return (
     <div className="sticky top-0 z-50 w-full">
       <div className="navbar bg-base-200/95">
-        <div className="navbar-start">
+        <div className="flex-none">
           <div className="dropdown">
             <label tabIndex="0" className="btn btn-ghost btn-circle">
               <svg
@@ -100,31 +100,17 @@ export default function NavBar() {
               </li>
             </ul>
           </div>
-          <div className="block sm:hidden">
-            <Link href="/" passHref>
-              <span className="btn btn-ghost text-left normal-case text-base tracking-tight text-bold">
-                Minecraft RipeNote
-              </span>
-            </Link>
-            <div className="right-0">
-              {navbarend()}
-            </div>
-          </div>
         </div>
-        <div className="navbar-center hidden sm:block">
-          <div className="hidden sm:block">
+        <div className="flex-1">
             <Link href="/" passHref>
               <span className="btn btn-ghost normal-case text-lg text-bold">
                 Minecraft WikiNote
               </span>
             </Link>
-          </div>
         </div>
-        <div className="navbar-end">
-          <div className="hidden sm:block">
+          <div className="flex-none">
             {navbarend()}
           </div>
-        </div>
       </div>
     </div>
   );
