@@ -8,7 +8,7 @@ export default function Footer(lang) {
     const author = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_AUTHOR_NAME
     return (
       <>
-        <p>Last update: {message} by <p className="text-bold">{author}</p> ({arrangesha})</p>
+        <p className='break-normal'>Last update: {message} by <p className="text-bold">{author}</p> ({arrangesha})</p>
       </>
     )
   }

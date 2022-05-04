@@ -49,7 +49,8 @@ function SelectViewPage() {
 }
 
 export default function LangSelect() {
-    if (!Cookies.get('lang')) {
+    const lang = Cookies.get('lang'); 
+    if (!lang) {
         return (
             <>
                 <div className="z-0">
