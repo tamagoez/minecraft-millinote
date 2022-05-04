@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { themeChange } from "theme-change";
 import Scroll from "react-scroll";
 import LangSelect from "/components/LangSelect"
+import { MdFeedback } from 'react-icon/md'
 
 import {
   HeadTitle,
@@ -25,6 +26,7 @@ import {
 import Head from "next/head";
 import EditThisPage from "/components/EditThisPage";
 import NextNProgress from "nextjs-progressbar";
+import Feedback from "/components/Feedback";
 
 export function reportWebVitals(metric) {
   console.log(metric);
@@ -91,6 +93,10 @@ export default function Page({ Component, pageProps }) {
         <HeadContents />
         <div className="sticky top-0">
           <NavBar />
+        </div>
+        <div className="top-50 left-0 fixed z-50">
+          <label for="feedback-modal" className="btn modal-button"><MdFeedback /> Feedback</label>
+          <Feedback />
         </div>
         <div className="px-3 pt-1 min-h-[83vh]">
           <div className="py-1">
