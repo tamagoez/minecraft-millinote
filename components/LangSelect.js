@@ -10,7 +10,7 @@ function SetLanguage(lang) {
 function SelectLanguageCookie() {
     return (
         <>
-            <div class="tooltip tooltip-open tooltip-bottom" data-tip="This will save to your Cookie and never ask">
+            <div className="tooltip tooltip-open tooltip-bottom" data-tip="This will save to your Cookie and never ask">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn m-1">Set Language</label>
                     <ul tabIndex="0" className="dropdown-content menu p-2 shadow-md bg-base-200 rounded-box w-52">
