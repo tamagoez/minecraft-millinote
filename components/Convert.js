@@ -6,7 +6,7 @@ import ParseURL from "/lib/ParseURL";
 
 import { animateScroll as scroll } from "react-scroll";
 function movenav() {
-  scroll.scrollMore(-65, {
+  scroll.scrollMore(0, {
     smooth: false,
     duration: 0,
     delay: 100,
@@ -14,7 +14,7 @@ function movenav() {
 }
 
 export function HeadTitle({ children }) {
-  const fixed_name = " - Minecraft WikiNote"
+  const fixed_name = " - Minecraft RipeNote"
   return (
     <>
       <Head>

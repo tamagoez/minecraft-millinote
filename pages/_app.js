@@ -32,9 +32,15 @@ export function HeadContents() {
   return (
     <>
       <Head>
+        <meta name="description" content="Minecraft wiki which ripe in knowledge and experience." />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <NextNProgress
-        options={{ showSpinner: false }}
+        startPosition={0.4}
+        stopDelayMs={200}
+        height={3}
+        showOnShallow={true}
+        options={{ showSpinner: false, }}
       />
     </>
   );
