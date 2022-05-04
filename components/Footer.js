@@ -8,7 +8,7 @@ export default function Footer(lang) {
     const author = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_AUTHOR_NAME
     return (
       <>
-        Last update: {message} by <p className="text-bold">{author}</p> ({arrangesha})
+        <p>Last update: {message} by <p className="text-bold">{author}</p> ({arrangesha})</p>
       </>
     )
   }
@@ -20,7 +20,7 @@ export default function Footer(lang) {
           <div>
             <p>Copyright © 2022 - WikiNote</p>
             <p>当サイトは&quot;Mojang AB&quot;および&quot;Microsoft社&quot;とは無関係であり、記事を利用したことによる如何なる損害も管理人は責任を負いません。</p>
-            <p className="text-center">{lastlog}</p>
+            {lastcontribute()}
           </div>
         </footer>
       </>
@@ -32,7 +32,7 @@ export default function Footer(lang) {
           <div>
             <p>Copyright © 2022 - RipeNote</p>
             <p>&quot;Minecraft&quot; is a trademark of Mojang Studios. This website is not affiliated with Mojang Studios.</p>
-            <p className="text-center">{lastcontribute()}</p>
+            {lastcontribute()}
           </div>
         </footer>
       </>
