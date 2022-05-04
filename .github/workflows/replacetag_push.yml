@@ -6,7 +6,7 @@ name: Replace Tag & Push
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/15 * * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,10 +30,16 @@ jobs:
       - name: Delete all mdx files
         run: |
           rm -fv ./pages/*.mdx
-      - name: Replace slug
+      - name: Clone
         run: |
           mkdir arrange
-          cp -fvr ./documents/* ./arrange/
+          mkdir clone
+          git clone https://github.com/ripenote/docs-minecraft-ripenote.git clone
+          rm -rfv ./clone/.github
+          rm -fv ./clone/README.md
+          rm -fv ./clone/LICENSE.md
+          rm -fv ./clone/.gitignore
+          cp -fvr ./clone/* ./arrange/
       - name: Copy all mdx files
         run: |
           cp -fpvr ./arrange/* ./pages/
