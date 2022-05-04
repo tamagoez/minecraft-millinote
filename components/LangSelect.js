@@ -14,7 +14,7 @@ function SelectLanguageCookie() {
                     <label tabIndex="0" className="btn m-1">Set Language</label>
                     <ul tabIndex="0" className="dropdown-content menu p-2 shadow-md bg-base-200 rounded-box w-52">
                         <li><p onClick={() => SetLanguage('en')}>English</p></li>
-                        <li><p onClick={() => SetLanguage('jp')}>日本語</p></li>
+                        <li><p onClick={() => SetLanguage('ja')}>日本語</p></li>
                     </ul>
                 </div>
             </div>
@@ -40,7 +40,7 @@ function SelectViewPage() {
                 <label tabIndex="0" className="btn m-1">Language</label>
                 <ul tabIndex="0" className="dropdown-content menu p-3 shadow-md bg-base-200 rounded-box w-52">
                     <li><p onClick={() => ViewLanguage('en')}>English</p></li>
-                    <li><p onClick={() => ViewLanguage('jp')}>日本語</p></li>
+                    <li><p onClick={() => ViewLanguage('ja')}>日本語</p></li>
                 </ul>
             </div>
         </>
