@@ -94,7 +94,7 @@ export default function Page({ Component, pageProps }) {
         <div className="sticky top-0">
           <NavBar />
         </div>
-        <div className="top-50 left-0 fixed z-50">
+        <div className="bottom-52 left-0 fixed z-50">
           <label htmlFor="feedback-modal" className="btn modal-button"><MdFeedback /> Feedback</label>
           <Feedback />
         </div>
