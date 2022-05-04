@@ -7,6 +7,7 @@ import { MDXProvider } from "@mdx-js/react";
 import { useEffect } from "react";
 import { themeChange } from "theme-change";
 import Scroll from "react-scroll";
+import LangSelect from "/components/LangSelect"
 
 import {
   HeadTitle,
@@ -38,7 +39,7 @@ export function HeadContents() {
       <NextNProgress
         startPosition={0.4}
         stopDelayMs={200}
-        height={3}
+        height={4}
         showOnShallow={true}
         options={{ showSpinner: false, }}
       />
@@ -90,6 +91,9 @@ export default function Page({ Component, pageProps }) {
           <NavBar />
         </div>
         <div className="px-3 pt-1 min-h-[83vh]">
+          <div className="py-1">
+            <LangSelect />
+          </div>
           <MDXProvider components={components}>
             <Component {...pageProps} />
           </MDXProvider>
