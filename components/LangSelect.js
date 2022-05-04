@@ -52,13 +52,17 @@ export default function LangSelect() {
     if (!Cookies.get('lang')) {
         return (
             <>
-                <SelectLanguageCookie />
+                <div className="z-0">
+                    <SelectLanguageCookie />
+                </div>
             </>
         )
     } else {
         return (
             <>
-                <SelectViewPage />
+                <div className="z-0">
+                    <SelectViewPage />
+                </div>
             </>
         )
     }
