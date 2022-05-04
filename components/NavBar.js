@@ -70,7 +70,7 @@ export default function NavBar() {
   return (
     <div className="sticky top-0 z-50 w-full">
       <div className="navbar bg-base-200/95">
-        <div className="navbar-start flex">
+        <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex="0" className="btn btn-ghost btn-circle">
               <svg
@@ -106,7 +106,7 @@ export default function NavBar() {
                 Minecraft RipeNote
               </span>
             </Link>
-            <div className="justify-end">
+            <div className="right-0">
               {navbarend()}
             </div>
           </div>
