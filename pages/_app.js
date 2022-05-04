@@ -91,7 +91,7 @@ export default function Page({ Component, pageProps }) {
     return (
       <>
         <HeadContents />
-        <div className="sticky top-0">
+        <div className="sticky top-0 z-50">
           <NavBar />
         </div>
         <div className="bottom-20 left-0 fixed z-50">

@@ -1,18 +1,17 @@
 import Cookies from 'js-cookie'
 
-function lastcontribute() {
-  const lastsha = process.env.VERCEL_GIT_COMMIT_SHA
-  const arrangesha = lastsha.substring(0,7)
-  const message = process.env.VERCEL_GIT_COMMIT_MESSAGE
-  const author = process.env.VERCEL_GIT_COMMIT_AUTHOR_NAME
-  return (
-    <>
-      Last update: {message} by <p className="text-bold">{author}</p> ({arrangesha})
-    </>
-  )
-}
-
 export default function Footer(lang) {
+  function lastcontribute() {
+    const lastsha = process.env.VERCEL_GIT_COMMIT_SHA
+    const arrangesha = lastsha.substring(0,7)
+    const message = process.env.VERCEL_GIT_COMMIT_MESSAGE
+    const author = process.env.VERCEL_GIT_COMMIT_AUTHOR_NAME
+    return (
+      <>
+        Last update: {message} by <p className="text-bold">{author}</p> ({arrangesha})
+      </>
+    )
+  }
   const lastlog = "Maintain by tamagoez";
   if (Cookies.get('lang') === "ja") {
     return (
@@ -31,9 +30,9 @@ export default function Footer(lang) {
       <>
         <footer className="footer footer-center p-4 bg-base-200 text-base-content">
           <div>
-            <p>Copyright © 2022 - WikiNote</p>
+            <p>Copyright © 2022 - RipeNote</p>
             <p>&quot;Minecraft&quot; is a trademark of Mojang Studios. This website is not affiliated with Mojang Studios.</p>
-            <p className="text-center">{lastlog}</p>
+            <p className="text-center">{lastcontribute()}</p>
           </div>
         </footer>
       </>
