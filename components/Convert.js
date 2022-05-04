@@ -97,7 +97,7 @@ export function ContentA({ href, children }) {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          className="underline decoration-1 text-base-600 hover:text-sky-600 cursor-pointer"
+          className="underline decoration-1 text-base-600 hover:text-sky-600 cursor-pointer break-words"
         >
               {children}
         </a>
@@ -110,7 +110,7 @@ export function ContentA({ href, children }) {
     <>
       <Link href={linkurl} passHref>
         <a
-          className="underline decoration-1 text-base-600 hover:text-sky-600 cursor-pointer"
+          className="underline decoration-1 text-base-600 hover:text-sky-600 cursor-pointer break-words"
         >
               {children}
         </a>
