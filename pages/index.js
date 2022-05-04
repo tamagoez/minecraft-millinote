@@ -32,7 +32,7 @@ export function Content() {
         <div className="hero min-h-screen w-full bg-gradient-to-r from-orange-900/20 to-green-100">
           <div className="hero-content text-center">
             <div className="max-w-md">
-              <h1 className="text-5xl font-bold">Minecraft WikiNote</h1>
+              <h1 className="text-5xl font-bold">Minecraft RipeNote</h1>
               <p className="py-3">
                 Minecraft Wiki which easy-to-understand than others
                 <br />
