@@ -9,7 +9,7 @@ import { themeChange } from "theme-change";
 import Scroll from "react-scroll";
 import LangSelect from "/components/LangSelect"
 import { MdFeedback } from 'react-icons/md'
-
+import Cookies from 'js-cookie';
 import {
   HeadTitle,
   ContentP,
@@ -88,6 +88,12 @@ export default function Page({ Component, pageProps }) {
     if (nowurl.indexOf('#') != -1) {
       ScrollAS.scrollMore(-65)
     }
+    const lang = Cookies.get("lang")
+    if (lang === "ja") {
+        const fbtitle = "フィードバック"
+    } else {
+        const fbtitle = "Feedback"
+    }
     return (
       <>
         <HeadContents />
@@ -95,7 +101,7 @@ export default function Page({ Component, pageProps }) {
           <NavBar />
         </div>
         <div className="bottom-24 right-0 fixed z-50">
-          <label htmlFor="feedback-modal" className="btn bg-base-500 rounded-none rounded-l-lg modal-button opacity-80 hover:opacity-95"><MdFeedback /><p className="px-1"/>Feedback</label>
+          <label htmlFor="feedback-modal" className="btn bg-base-500 rounded-none rounded-l-lg modal-button opacity-80 hover:opacity-95"><MdFeedback /><p className="px-1"/>{fbtitle}</label>
           <Feedback />
         </div>
         <div className="px-3 pt-1 min-h-[83vh]">
