@@ -27,6 +27,7 @@ import Head from "next/head";
 import EditThisPage from "/components/EditThisPage";
 import NextNProgress from "nextjs-progressbar";
 import Feedback from "/components/Feedback";
+import HeadDetail from "/components/HeadDetail";
 
 export function reportWebVitals(metric) {
   console.log(metric);
@@ -41,7 +42,7 @@ export function HeadContents() {
       </Head>
       <NextNProgress
         startPosition={0.45}
-        stopDelayMs={180}
+        stopDelayMs={120}
         height={4}
         showOnShallow={true}
         options={{ showSpinner: false, }}
@@ -108,6 +109,9 @@ export default function Page({ Component, pageProps }) {
         <div className="px-3 pt-1 min-h-[83vh]">
           <div className="py-1 z-0">
             <LangSelect />
+          </div>
+          <div className="py-1">
+            <HeadTitle link={nowurl} />
           </div>
           <MDXProvider components={components}>
             <Component {...pageProps} />
