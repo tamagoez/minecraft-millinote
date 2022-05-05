@@ -53,9 +53,8 @@ export default function LangSelect() {
     if (!lang) {
         return (
             <>
-                <div className="flex z-0 w-full">
-                    <div><p className="font-semibold">Minecraft RipeNote</p></div>
-                    <div className="justify-items-end"><SelectLanguageCookie /></div>
+                <div className="z-0 right-0">
+                    <div><SelectLanguageCookie /></div>
                 </div>
             </>
         )
