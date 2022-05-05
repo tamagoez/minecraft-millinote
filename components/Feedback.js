@@ -1,6 +1,6 @@
 function GetHeight() {
     if (typeof window !== "undefined") {
-        return window.innerHeight * 0.75 - 20;
+        return window.innerHeight * 0.75 - 22;
     } else {
         return 300;
     }
