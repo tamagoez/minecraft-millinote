@@ -6,10 +6,10 @@ export default function HeadDetail({ link }) {
   if (error) return <p>failed to load</p>
   if (!data) return <p>loading...</p>
   return (
-    <div className="flex gap-1">
+    <>
       <p className="font-bold">{data.commit.author.name}</p>
       <p>{data.commit.author.date}</p>
       <p>{data.sha.substring(0,7)}</p>
-    </div>
+    </>
   )
 }
