@@ -89,10 +89,11 @@ export default function Page({ Component, pageProps }) {
       ScrollAS.scrollMore(-65)
     }
     const lang = Cookies.get("lang")
+    let fbtitle;
     if (lang === "ja") {
-        const fbtitle = "フィードバック"
+        fbtitle = "フィードバック"
     } else {
-        const fbtitle = "Feedback"
+        fbtitle = "Feedback"
     }
     return (
       <>
