@@ -94,8 +94,8 @@ export default function Page({ Component, pageProps }) {
         <div className="sticky top-0 z-50">
           <NavBar />
         </div>
-        <div className="bottom-20 left-0 fixed z-50">
-          <label htmlFor="feedback-modal" className="btn glass bg-base-500 rounded-none rounded-r-lg modal-button opacity-80 hover:opacity-95"><MdFeedback /><p className="px-1"/>Feedback</label>
+        <div className="bottom-24 right-0 fixed z-50">
+          <label htmlFor="feedback-modal" className="btn bg-base-500 rounded-none rounded-l-lg modal-button opacity-80 hover:opacity-95"><MdFeedback /><p className="px-1"/>Feedback</label>
           <Feedback />
         </div>
         <div className="px-3 pt-1 min-h-[83vh]">
