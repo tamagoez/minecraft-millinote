@@ -5,11 +5,11 @@ export default function Document() {
     <Html>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@350&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400&display=swap"
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@350&display=swap"
           rel="stylesheet"
         />
       </Head>
