@@ -18,7 +18,7 @@ export default function Footer(lang) {
       <>
         <footer className="footer footer-center p-4 bg-base-200 text-base-content">
           <div>
-            <p>Copyright © 2022 - WikiNote</p>
+            <p>Copyright © 2022 - RipeNote</p>
             <p>当サイトは&quot;Mojang AB&quot;および&quot;Microsoft社&quot;とは無関係であり、記事を利用したことによる如何なる損害も管理人は責任を負いません。</p>
             {lastcontribute()}
           </div>
