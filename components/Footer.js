@@ -16,7 +16,7 @@ export default function Footer(lang) {
   if (Cookies.get('lang') === "ja") {
     return (
       <>
-        <footer className="footer footer-center p-4 bg-base-200 text-base-content rounded-t-lg">
+        <footer className="footer footer-center p-4 bg-base-200 text-base-content rounded-t-3xl">
           <div>
             <p>Copyright © 2022 - RipeNote</p>
             <p>当サイトは&quot;Mojang AB&quot;および&quot;Microsoft社&quot;とは無関係であり、記事を利用したことによる如何なる損害も管理人は責任を負いません。</p>
@@ -28,7 +28,7 @@ export default function Footer(lang) {
   } else {
     return (
       <>
-        <footer className="footer footer-center p-4 bg-base-200 text-base-content rounded-t-lg">
+        <footer className="footer footer-center p-4 bg-base-200 text-base-content rounded-t-3xl">
           <div>
             <p>Copyright © 2022 - RipeNote</p>
             <p>&quot;Minecraft&quot; is a trademark of Mojang Studios. This website is not affiliated with Mojang Studios.</p>
