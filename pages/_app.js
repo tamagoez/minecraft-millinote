@@ -103,7 +103,7 @@ export default function Page({ Component, pageProps }) {
           <NavBar />
         </div>
         <div className="bottom-24 right-0 fixed z-50">
-          <label htmlFor="feedback-modal" className="btn bg-base-500 rounded-none rounded-l-lg modal-button opacity-80 hover:opacity-95"><MdFeedback /><div className="hidden sm:inline-block"><p className="px-1"/>{fbtitle}</div></label>
+          <label htmlFor="feedback-modal" className="btn bg-base-500 rounded-none rounded-l-lg modal-button opacity-80 hover:opacity-95"><MdFeedback /><div className="hidden sm:block"><p className="px-1"/>{fbtitle}</div></label>
           <Feedback />
         </div>
         <div className="px-3 pt-1 min-h-[83vh]">
