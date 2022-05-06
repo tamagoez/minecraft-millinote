@@ -1,5 +1,6 @@
 // https://github.com/vercel/next.js/discussions/36310
 import remarkGfm from 'remark-gfm';
+import remarkBreaks from 'remark-breaks'
 import NextMDX from '@next/mdx'
 
 /** @type {import('next').NextConfig} */
@@ -10,7 +11,7 @@ const nextConfig = {
 const withMDX = NextMDX({
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [remarkGfm],
+    remarkPlugins: [remarkGfm, remarkBreaks],
     rehypePlugins: [],
     // If you use `MDXProvider`, uncomment the following line.
     providerImportSource: "@mdx-js/react",
