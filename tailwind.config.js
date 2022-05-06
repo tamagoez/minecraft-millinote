@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['"Radio Canada"', '"Noto Sans JP"'],
+        'sans': ['"Roboto Flex"', '"Noto Sans JP"'],
       },
     },
   },
