@@ -9,7 +9,7 @@ export default function Footer(lang) {
     // const last = 'Last update: ' + message + ' by <p className="text-bold">' + author + '</p> (' + arrangesha + ')'
     return (
       <>
-        <span className='break-normal'>Last update: {message} by <span className="text-bold">{author}</span> ({arrangesha})</span>
+        <p className='break-normal'>Last update: {message} by <span className="text-bold">{author}</span> ({arrangesha})</p>
       </>
     )
   }
