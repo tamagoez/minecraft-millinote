@@ -103,7 +103,7 @@ export default function NavBar() {
         </div>
         <div className="flex-1">
             <Link href="/" passHref>
-              <span className="btn btn-ghost normal-case text-lg text-bold">
+              <span className="btn btn-ghost normal-case text-base sm:text-lg text-bold">
                 Minecraft RipeNote
               </span>
             </Link>
