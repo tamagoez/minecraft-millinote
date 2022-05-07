@@ -1,19 +1,17 @@
 import Cookies from 'js-cookie'
 
-export default function Footer(lang) {
+export default function Footer(_lang) {
   function lastcontribute() {
     const lastsha = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA
     const arrangesha = lastsha.substring(0,7)
     const message = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_MESSAGE
     const author = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_AUTHOR_NAME
-    // const last = 'Last update: ' + message + ' by <p className="text-bold">' + author + '</p> (' + arrangesha + ')'
     return (
       <>
         <p className='break-normal'>Last update: {message} by <span className="text-bold">{author}</span> ({arrangesha})</p>
       </>
     )
   }
-  const lastlog = "Maintain by tamagoez";
   if (Cookies.get('lang') === "ja") {
     return (
       <>
