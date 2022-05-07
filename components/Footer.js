@@ -6,10 +6,10 @@ export default function Footer(lang) {
     const arrangesha = lastsha.substring(0,7)
     const message = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_MESSAGE
     const author = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_AUTHOR_NAME
-    const last = 'Last update: ' + message + ' by <p className="text-bold">' + author + '</p> (' + arrangesha + ')'
+    // const last = 'Last update: ' + message + ' by <p className="text-bold">' + author + '</p> (' + arrangesha + ')'
     return (
       <>
-        <p className='break-normal'>{last}</p>
+        <span className='break-normal'>Last update: {message} by <span className="text-bold">{author}</span> ({arrangesha})</span>
       </>
     )
   }
