@@ -6,9 +6,10 @@ export default function Footer(lang) {
     const arrangesha = lastsha.substring(0,7)
     const message = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_MESSAGE
     const author = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_AUTHOR_NAME
+    const last = 'Last update: ' + message + ' by <p className="text-bold">' + author + '</p> (' + arrangesha + ')'
     return (
       <>
-        <p className='break-normal'>Last update: {message} by <p className="text-bold">{author}</p> ({arrangesha})</p>
+        <p className='break-normal'>{last}</p>
       </>
     )
   }
@@ -16,7 +17,7 @@ export default function Footer(lang) {
   if (Cookies.get('lang') === "ja") {
     return (
       <>
-        <footer className="footer footer-center p-4 bg-base-200 text-base-content rounded-t-2xl">
+        <footer className="footer footer-center p-4 bg-base-200 text-base-content rounded-t-[32px]">
           <div>
             <p>Copyright © 2022 - RipeNote</p>
             <p>当サイトは&quot;Mojang AB&quot;および&quot;Microsoft社&quot;とは無関係であり、記事を利用したことによる如何なる損害も管理人は責任を負いません。</p>
