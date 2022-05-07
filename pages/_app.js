@@ -99,11 +99,11 @@ export default function Page({ Component, pageProps }) {
     return (
       <>
         <HeadContents />
-        <div className="sticky top-0 z-50 backdrop-blur-sm">
+        <div className="sticky top-0 z-50">
           <NavBar />
         </div>
         <div className="bottom-20 right-0 fixed z-50">
-          <label htmlFor="feedback-modal" className="btn bg-base-400 rounded-none rounded-l-lg modal-button opacity-60 hover:opacity-95"><MdFeedback /><div className="hidden sm:block"><span className="px-1"/>{fbtitle}</div></label>
+          <label htmlFor="feedback-modal" className="btn bg-base-400 rounded-none rounded-l-lg modal-button opacity-50 hover:opacity-90"><MdFeedback /><div className="hidden sm:block"><span className="px-1"/>{fbtitle}</div></label>
           <Feedback />
         </div>
         <div className="px-3 pt-1 min-h-[83vh]">
