@@ -34,7 +34,7 @@ export function reportWebVitals(metric) {
 }
 
 export function HeadContents({ address }) {
-  const imgUrl = "https://github.com/ripenote/docs-minecraft-ripenote/raw/main/.og-generate/output/en" + address
+  const imgUrl = "https://github.com/ripenote/docs-minecraft-ripenote/raw/main/.og-generate/output" + address
   console.info("[_app.js] imgUrl = " + imgUrl)
   return (
     <>
