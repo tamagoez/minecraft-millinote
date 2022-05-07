@@ -33,11 +33,13 @@ export function reportWebVitals(metric) {
   console.log(metric);
 }
 
-export function HeadContents() {
+export function HeadContents({ address }) {
+  const imgUrl = "https://github.com/ripenote/docs-minecraft-ripenote/raw/main/.og-generate/output/en" + address
   return (
     <>
       <Head>
         <meta name="description" content="Minecraft wiki which ripe in knowledge and experience." />
+        <meta property="og:image" content={imgUrl} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NextNProgress
@@ -98,7 +100,7 @@ export default function Page({ Component, pageProps }) {
     }
     return (
       <>
-        <HeadContents />
+        <HeadContents address={nowurl} />
         <div className="sticky top-0 z-50">
           <NavBar />
         </div>
