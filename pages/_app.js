@@ -39,6 +39,7 @@ export function HeadContents({ address }) {
     <>
       <Head>
         <meta name="description" content="Minecraft wiki which ripe in knowledge and experience." />
+        <meta property="og:type" content="website" />
         <meta property="og:image" content={imgUrl} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
