@@ -69,7 +69,7 @@ export default function NavBar() {
   
   return (
     <div className="sticky top-0 z-50 w-full">
-      <div className="navbar bg-base-200/95 rounded-b-[12px]">
+      <div className="navbar bg-base-200/95 rounded-b-[77px]">
         <div className="flex-none">
           <div className="dropdown">
             <label tabIndex="0" className="btn btn-ghost btn-circle">
