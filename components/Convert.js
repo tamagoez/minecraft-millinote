@@ -33,8 +33,18 @@ export function HeadTitle({ children }) {
 
 export function ContentH2({ children }) {
   global.description.read = false;
+  function exportdescription() {
+    if (global.description.read === false) {
+      return (
+        <Head>
+          <meta proprerty="og:description" content={global.description.text} />
+        </Head>
+      )
+    } else { return null }
+  }
   return (
     <>
+      {exportdescription()}
       <div className="pb-1" />
       <div className="border-dashed border-b-[3px] pt-5 flex">
         <h2 className="font-semibold text-base-900 text-2xl" id={children}>{children}</h2>
