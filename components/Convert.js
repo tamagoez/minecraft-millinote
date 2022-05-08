@@ -32,14 +32,14 @@ export function HeadTitle({ children }) {
 }
 
 export function ContentH2({ children }) {
-  global.description.read = false;
   function exportdescription() {
-    if (global.description.read === false) {
+    if (global.description.read === true) {
       return (
         <Head>
           <meta proprerty="og:description" content={global.description.text} />
         </Head>
       )
+      global.description.read = false;
     } else { return null }
   }
   return (
@@ -83,7 +83,7 @@ export function ContentCode({ children }) {
 }
 
 export function ContentP({ children }) {
-  global.description.text = global.description.text + ' ' + children;
+  if (global.description.read === true) {lobal.description.text = global.description.text + ' ' + children}
   return (
     <>
       <p className="text-base-700">{children}</p>
