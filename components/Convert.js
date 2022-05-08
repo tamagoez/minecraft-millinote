@@ -38,7 +38,8 @@ export function ContentH2({ children }) {
       return (
         <Head>
           <meta proprerty="og:description" content={global.description.text} />
-        </Head>
+          <meta property="description" content={global.description.text} />
+         </Head>
       )
     } else { return null }
   }
