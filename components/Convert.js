@@ -15,6 +15,7 @@ function movenav() {
 
 export function HeadTitle({ children }) {
   const fixed_name = " - Minecraft RipeNote"
+  global.description.read = true;
   return (
     <>
       <Head>
@@ -31,6 +32,7 @@ export function HeadTitle({ children }) {
 }
 
 export function ContentH2({ children }) {
+  global.description.read = false;
   return (
     <>
       <div className="pb-1" />
@@ -71,6 +73,7 @@ export function ContentCode({ children }) {
 }
 
 export function ContentP({ children }) {
+  global.description.text = global.description.text + ' ' + children;
   return (
     <>
       <p className="text-base-700">{children}</p>
