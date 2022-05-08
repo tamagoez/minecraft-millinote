@@ -100,6 +100,7 @@ export default function Page({ Component, pageProps }) {
     } else {
         fbtitle = "Feedback"
     }
+    global.description = {};
     return (
       <>
         <HeadContents address={nowurl} />
